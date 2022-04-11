@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-11T13:43:47.200Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="zZ9uEeXTjDM8T4-TFQOf" version="16.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-11T13:55:25.069Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="OWCMBJC3lGC_w6gkp7i4" version="16.6.1" type="github">
   <diagram id="cRY_7gkTVNxFrMp_fR6s" name="第 1 页">
-    <mxGraphModel dx="3903" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4851" dy="1175" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -286,7 +286,7 @@
           <mxGeometry x="240" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-121" value="PageIndex" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="-1080" y="1873.18" width="740" height="230" as="geometry" />
+          <mxGeometry x="-1080" y="1873.18" width="740" height="216.82" as="geometry" />
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-122" value="&lt;div&gt;// 将一页大小划成40个区间&lt;/div&gt;&lt;div&gt;&amp;nbsp; private static final int INTERVALS_NO = 40;&lt;/div&gt;&lt;div&gt;&amp;nbsp; private static final int THRESHOLD = PageCache.PAGE_SIZE / INTERVALS_NO;&lt;/div&gt;// 按照空闲空间大小（40种情况），缓存对应的页Info(包括页号和空闲空间大小)_&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;span&gt;private List&amp;lt;PageInfo&amp;gt;[] lists;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-121">
           <mxGeometry x="10" y="30" width="660" height="100" as="geometry" />
@@ -322,16 +322,16 @@
           <mxGeometry x="10" y="230" width="580" height="100" as="geometry" />
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-127" value="DataManagerImpl extends AbstractCache&lt;DataItem&gt;" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-600" y="1033.18" width="1180" height="460" as="geometry" />
+          <mxGeometry x="-567" y="970.0000000000001" width="1180" height="460" as="geometry" />
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-135" value="抽象类方法实现：&lt;br&gt;&amp;nbsp; protected DataItem getForCache(long uid)&amp;nbsp; //&amp;nbsp;从 uid 中解析出页号，从 pageCache 中获取到页面，再根据偏移，解析出DataItem&lt;br&gt;&amp;nbsp;&amp;nbsp;protected void releaseForCache(DataItem di)&amp;nbsp; //&amp;nbsp;将 DataItem 写回数据源，将 DataItem 所在的页 release 即可" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-127">
-          <mxGeometry x="8" y="30" width="1010" height="60" as="geometry" />
+          <mxGeometry x="30" y="36.82" width="1010" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-137" value="&lt;div&gt;&lt;span&gt;静态方法：&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; // 创建文件db文件、日志文件，创建对应的PageCache和Logger，并创建DataManagerImpl，并对第一页进行初始化&lt;/span&gt;&lt;/div&gt;&amp;nbsp; public static DataManager create(String path, long mem, TransactionManager tm)&lt;br&gt;&amp;nbsp; // 打开文件，创建对应的PageCache和Logger，并创建DataManagerImpl，对第一页进行校验，判断是否执行恢复流程，并重新对第一页生成随机字节&lt;br&gt;&amp;nbsp; public static DataManager open(String path, long mem, TransactionManager tm)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-127">
-          <mxGeometry x="14" y="100" width="1120" height="100" as="geometry" />
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-137" value="&lt;div&gt;&lt;span&gt;静态方法：&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; // 创建文件&lt;font color=&quot;#c24e4e&quot;&gt;&lt;b&gt;db文件、日志文件&lt;/b&gt;&lt;/font&gt;，创建对应的&lt;b&gt;&lt;font color=&quot;#a1668c&quot;&gt;PageCache和Logger&lt;/font&gt;&lt;/b&gt;，并创建DataManagerImpl，并对第一页进行初始化&lt;/div&gt;&amp;nbsp; public static DataManager create(String path, long mem, TransactionManager tm)&lt;br&gt;&amp;nbsp; // 打开文件，创建对应的PageCache和Logger，并创建DataManagerImpl，对第一页进行校验，判断是否执行恢复流程，并重新对第一页生成随机字节&lt;br&gt;&amp;nbsp; public static DataManager open(String path, long mem, TransactionManager tm)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-127">
+          <mxGeometry x="30" y="306.82" width="1120" height="100" as="geometry" />
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-138" value="接口方法：&lt;br&gt;功能供上层使用：&lt;br&gt;&amp;nbsp;&amp;nbsp;DataItem read(long uid)&amp;nbsp; &amp;nbsp; // 根据uid读取DataItem，调用&lt;font color=&quot;#cc00cc&quot;&gt;super.get()&lt;/font&gt;方法，同时实现了缓存功能。&lt;br&gt;&amp;nbsp; long insert(long xid, byte[] data)&amp;nbsp; // 插入数据&lt;br&gt;&amp;nbsp; //&amp;nbsp;在 pageIndex 中获取一个足以存储插入内容的页面的页号，&lt;br&gt;&amp;nbsp; // 获取页面后，首先需要写入插入日志，接着才可以通过 pageX 插入数据，并返回插入位置的偏移。&lt;br&gt;&amp;nbsp; // 最后需要将页面信息重新插入 pageIndex&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;public void close()&amp;nbsp; //&amp;nbsp;执行缓存和日志的关闭流程,并设置第一页字节校验" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-127">
-          <mxGeometry x="14" y="220" width="770" height="180" as="geometry" />
+          <mxGeometry x="30" y="106.82" width="770" height="180" as="geometry" />
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-144" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;entryX=0.552;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-127" target="aefCaqSCdMbnrOnTO0IQ-125">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -394,16 +394,16 @@
             <mxPoint x="536" y="1163.18" as="sourcePoint" />
             <mxPoint x="-345.92" y="1603.18" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="510" y="1373.18" />
+              <mxPoint x="-570" y="1520" />
+              <mxPoint y="1500" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-160" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-127" target="aefCaqSCdMbnrOnTO0IQ-159">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-160" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" target="aefCaqSCdMbnrOnTO0IQ-159">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-665.92" y="1308.18" as="sourcePoint" />
+            <mxPoint x="-600" y="1200" as="sourcePoint" />
             <mxPoint x="-755.92" y="2098.18" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="-770" y="1158.18" />
               <mxPoint x="-980" y="1213.18" />
             </Array>
           </mxGeometry>
@@ -440,7 +440,7 @@
             <mxPoint x="-610" y="1193.18" as="sourcePoint" />
             <mxPoint x="-310" y="1733.18" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="-650" y="1523.18" />
+              <mxPoint x="-550" y="1540" />
               <mxPoint x="-370" y="1573.18" />
             </Array>
           </mxGeometry>
