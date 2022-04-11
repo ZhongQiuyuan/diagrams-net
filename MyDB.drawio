@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-11T12:27:46.864Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="axKc8vGYV7D252-bjVI4" version="16.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-11T12:57:14.207Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="GetKGreJDxEDKczHpDlw" version="16.6.1" type="github">
   <diagram id="cRY_7gkTVNxFrMp_fR6s" name="第 1 页">
     <mxGraphModel dx="3076" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -8,7 +8,7 @@
           <mxGeometry x="-107" y="36" width="260" height="20" as="geometry" />
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-2" value="XID文件（.xid）" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="-690" y="90" width="541.25" height="250" as="geometry">
+          <mxGeometry x="-700" y="100" width="541.25" height="250" as="geometry">
             <mxRectangle x="-170" y="120" width="160" height="23" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -137,10 +137,10 @@
           <mxGeometry x="-1337.5" y="1470" width="180" height="20" as="geometry" />
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-50" value="PageOne" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="-1427.5" y="1515" width="360" height="165" as="geometry" />
+          <mxGeometry x="-1427.5" y="1515" width="375" height="165" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-52" value="&lt;div&gt;&lt;span&gt;静态方法：&lt;/span&gt;&lt;/div&gt;setVcOpen(Page pg) // 启动时设置初始字节&lt;br&gt;setVcClose(Page pg)&amp;nbsp; //&amp;nbsp;关闭时拷贝字节&lt;br&gt;checkVc(Page pg) //&amp;nbsp;校验字节：" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-50">
-          <mxGeometry x="15" y="60" width="350" height="80" as="geometry" />
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-52" value="&lt;div&gt;&lt;span&gt;静态方法：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;public static byte[] InitRaw() //初始化第一页&lt;br&gt;&lt;/span&gt;&lt;/div&gt;setVcOpen(Page pg) // 启动时设置初始字节&lt;br&gt;setVcClose(Page pg)&amp;nbsp; //&amp;nbsp;关闭时拷贝字节&lt;br&gt;checkVc(Page pg) //&amp;nbsp;校验字节：" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-50">
+          <mxGeometry x="15" y="50" width="360" height="100" as="geometry" />
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-53" value="第一页用来做启动检查" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-50">
           <mxGeometry x="15" y="35" width="180" height="20" as="geometry" />
@@ -336,7 +336,7 @@
           <mxGeometry x="10" y="210" width="450" height="140" as="geometry" />
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-126" value="TansactionManagerImpl" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-30" y="80" width="590" height="340" as="geometry" />
+          <mxGeometry x="-50" y="70" width="590" height="340" as="geometry" />
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-133" value="接口方法：&lt;br&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; long begin();&amp;nbsp; // 开启一个事务，更新文件头和事务状态&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void commit(long xid);&amp;nbsp; // 提交事务，更新文件中事务状态&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void abort(long xid);&amp;nbsp; // 撤销事务，更新文件中事务状态&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; boolean isActive(long xid);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; boolean isCommitted(long xid);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; boolean isAborted(long xid);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void close(); // 关闭文件流&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private void checkXIDCounter() // 检查文件是否合法&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-126">
           <mxGeometry x="10" y="20" width="480" height="200" as="geometry" />
@@ -345,7 +345,25 @@
           <mxGeometry x="10" y="230" width="580" height="100" as="geometry" />
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-127" value="DataManagerImpl extends AbstractCache&lt;DataItem&gt;" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-115" y="490" width="685" height="460" as="geometry" />
+          <mxGeometry x="-110" y="500" width="1028" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-135" value="抽象类方法实现：&lt;br&gt;&amp;nbsp; protected DataItem getForCache(long uid)&amp;nbsp; //&amp;nbsp;从 uid 中解析出页号，从 pageCache 中获取到页面，再根据偏移，解析出DataItem&lt;br&gt;&amp;nbsp;&amp;nbsp;protected void releaseForCache(DataItem di)&amp;nbsp; //&amp;nbsp;将 DataItem 写回数据源，将 DataItem 所在的页 release 即可" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-127">
+          <mxGeometry x="8" y="30" width="1010" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-137" value="&lt;div&gt;&lt;span&gt;静态方法：&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; // 创建文件db文件、日志文件，并创建DataManagerImpl，并对第一页进行初始化&lt;/span&gt;&lt;/div&gt;&amp;nbsp; public static DataManager create(String path, long mem, TransactionManager tm)&lt;br&gt;&amp;nbsp; // 打开文件并创建DataManagerImpl，对第一页进行校验，判断是否执行恢复流程，并重新对第一页生成随机字节&lt;br&gt;&amp;nbsp; public static DataManager open(String path, long mem, TransactionManager tm)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-127">
+          <mxGeometry x="8" y="100" width="850" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-138" value="接口方法：&lt;br&gt;功能供上层使用：&lt;br&gt;&amp;nbsp;&amp;nbsp;DataItem read(long uid)&amp;nbsp; &amp;nbsp; // 根据uid读取DataItem，调用&lt;font color=&quot;#cc00cc&quot;&gt;super.get()&lt;/font&gt;方法，同时实现了缓存功能。&lt;br&gt;&amp;nbsp; long insert(long xid, byte[] data)&amp;nbsp; // 插入数据&lt;br&gt;&amp;nbsp; //&amp;nbsp;在 pageIndex 中获取一个足以存储插入内容的页面的页号，&lt;br&gt;&amp;nbsp; // 获取页面后，首先需要写入插入日志，接着才可以通过 pageX 插入数据，并返回插入位置的偏移。&lt;br&gt;&amp;nbsp; // 最后需要将页面信息重新插入 pageIndex&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;public void close()&amp;nbsp; //&amp;nbsp;执行缓存和日志的关闭流程,并设置第一页字节校验" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-127">
+          <mxGeometry x="8" y="200" width="770" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-140" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=-0.003;entryY=0.57;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-2" target="aefCaqSCdMbnrOnTO0IQ-134">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-130" y="270" as="sourcePoint" />
+            <mxPoint x="-80" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-100" y="270" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
