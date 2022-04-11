@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-04-11T02:33:44.664Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="QHrgR6S8_u8KQCqXQvvE" version="16.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-11T03:54:33.887Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="AYW6fIOv4LoNM4Z5i3Ry" version="16.6.1" type="github">
   <diagram id="cRY_7gkTVNxFrMp_fR6s" name="第 1 页">
     <mxGraphModel dx="2249" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-1" value="&lt;font style=&quot;font-size: 16px&quot; face=&quot;Verdana&quot;&gt;&lt;b&gt;TM（Transaction Manager）&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-155" y="40" width="260" height="20" as="geometry" />
+          <mxGeometry x="-107" y="36" width="260" height="20" as="geometry" />
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-2" value="XID文件（.xid）" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="-250" y="80" width="541.25" height="250" as="geometry">
@@ -69,6 +69,67 @@
         </mxCell>
         <mxCell id="aefCaqSCdMbnrOnTO0IQ-25" value="偏移：0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-2">
           <mxGeometry x="20" y="110" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-27" value="&lt;font style=&quot;font-size: 16px&quot; face=&quot;Verdana&quot;&gt;&lt;b&gt;DM（Data Manager）&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-100" y="390" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-28" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;缓存框架&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="460" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-30" value="AbstractCache(抽象类)" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="490" width="760" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-34" value="抽象方法：&lt;br&gt;&amp;nbsp; [1]当资源不在缓存时的获取行为：getForCache(long key)&lt;br&gt;&amp;nbsp; [2]当资源被驱逐时的写回行为：releaseForCache(T obj)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-30">
+          <mxGeometry x="20" y="130" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-35" value="private HashMap cache;                     // 实际缓存的数据&lt;br&gt;private HashMap references;          // 资源的引用个数&lt;br&gt;private HashMap getting;             // 资源是否正在被获取forCache" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-30">
+          <mxGeometry x="20" y="40" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-36" value="默认方法：&lt;br&gt;&amp;nbsp; protected T &lt;font color=&quot;#cc00cc&quot;&gt;get&lt;/font&gt;(long key)&amp;nbsp; // 读取资源，根据情况或从缓存中读、或&lt;font color=&quot;#cc0000&quot;&gt;从源读[1]&lt;/font&gt;（并加到缓存中）&lt;br&gt;&amp;nbsp; protected void &lt;font color=&quot;#cc00cc&quot;&gt;release&lt;/font&gt;(long key)&amp;nbsp; // 释放资源，若引用计数为0，将资源从缓存中&lt;font color=&quot;#cc0000&quot;&gt;驱逐，写回[2]&lt;/font&gt;&lt;br&gt;&amp;nbsp; protected void close()&amp;nbsp; // 关闭缓存，写回所有资源。" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-30">
+          <mxGeometry x="20" y="210" width="740" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-37" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;页面缓存（&lt;/b&gt;&lt;b&gt;缓存框架的具体实现之一&lt;/b&gt;&lt;b&gt;）&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="-435" y="860" width="290" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-38" value="PageCacheImpl extends AbstractCache&lt;Page&gt;" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-680" y="900" width="840" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-45" value="接口方法：&lt;br&gt;&amp;nbsp; int newPage(byte[] initData);&amp;nbsp; // 新建一个页并写回&lt;br&gt;&amp;nbsp; Page getPage(int pgno) throws Exception;&amp;nbsp; // 读取一个页（调用了AbstractCache的&lt;font color=&quot;#cc00cc&quot;&gt;get方法&lt;/font&gt;）&lt;br&gt;&amp;nbsp; void close();&amp;nbsp; // 关闭文件流&lt;br&gt;&amp;nbsp; void release(Page page);&amp;nbsp; // 释放该页的缓存（调用了AbstractCache的&lt;font color=&quot;#cc00cc&quot;&gt;release方法&lt;/font&gt;）&lt;br&gt; &lt;br&gt;&amp;nbsp; void truncateByPgno(int maxPgno);&amp;nbsp; &amp;nbsp;// 根据页号截断文件&lt;br&gt;&amp;nbsp; int getPageNumber();&amp;nbsp; // 获取总页数&lt;br&gt;&amp;nbsp; void flushPage(Page pg); // 写回某一页" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-38">
+          <mxGeometry x="10" y="160" width="750" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-46" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;抽象类方法实现：&lt;/span&gt;&lt;/div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; protected Page getForCache(long key)&amp;nbsp; // 从数据库文件（.db）中读取,并包装成Page&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; protected void releaseForCache(Page pg)&amp;nbsp; // 根据是否是脏页决定是否需要写回文件&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#CC00CC;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-38">
+          <mxGeometry x="10" y="350" width="680" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-47" value="&lt;font style=&quot;font-size: 16px&quot;&gt;PAGE_SIZE = 1 &amp;lt;&amp;lt; 13;&amp;nbsp; // 缓存的一个页的大小为8k&lt;br&gt;private AtomicInteger pageNumbers; //记录打开的.db文件有多少页&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-38">
+          <mxGeometry x="10" y="40" width="540" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-48" value="静态方法：&lt;br&gt;&amp;nbsp; public static PageCacheImpl create(String path, long memory)&amp;nbsp; // 创建.db文件并创建PageCacheImpl&lt;br&gt;&amp;nbsp; public static PageCacheImpl open(String path, long memory)&amp;nbsp; // 从已有.db文件中创建PageCacheImpl" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-38">
+          <mxGeometry x="10" y="90" width="830" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-39" value="PageImpl" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="200" y="900" width="405" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-40" value="    private int pageNumber; // 页号&lt;br&gt;    private byte[] data; // 具体数据&lt;br&gt;    private boolean dirty; // 是否为脏页&lt;br&gt;    private Lock lock;&amp;nbsp;&lt;br&gt; &lt;br&gt;    private PageCache pc; // 缓存了此页的PageCache" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-39">
+          <mxGeometry x="5" y="40" width="400" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-41" value="提供了一些基本的&lt;br&gt;set\get方法&lt;br&gt;lock\unlock方法&lt;br&gt;在缓存中释放该页的release方法" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-39">
+          <mxGeometry x="5" y="170" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-43" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#000000;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-38" target="aefCaqSCdMbnrOnTO0IQ-39">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-260" y="1030" as="sourcePoint" />
+            <mxPoint x="230" y="900" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-10" y="860" />
+              <mxPoint x="150" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-44" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.562;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-30" target="aefCaqSCdMbnrOnTO0IQ-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-160" y="830" as="sourcePoint" />
+            <mxPoint x="-90" y="850" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
