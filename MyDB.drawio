@@ -1,128 +1,128 @@
-<mxfile host="app.diagrams.net" modified="2022-04-11T14:18:43.475Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="g9ejXnL9HbD2M5YalWPr" version="16.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-12T14:29:43.011Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="8s7sVVpdRbnr8TgyX1c5" version="17.4.2" type="github">
   <diagram id="cRY_7gkTVNxFrMp_fR6s" name="第 1 页">
     <mxGraphModel dx="3903" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-1" value="&lt;font style=&quot;font-size: 16px&quot; face=&quot;Verdana&quot;&gt;&lt;b&gt;TM（Transaction Manager）&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-1" value="&lt;font style=&quot;font-size: 16px&quot; face=&quot;Verdana&quot;&gt;&lt;b&gt;TM（Transaction Manager）&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-107" y="36" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-2" value="XID文件（.xid）" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-2" value="XID文件（.xid）" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="-900" y="110" width="541.25" height="250" as="geometry">
             <mxRectangle x="-170" y="120" width="160" height="23" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-4" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; style=&quot;width: 100% ; height: 100% ; border-collapse: collapse ; font-size: 14px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;commited（1）&lt;/font&gt;&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;commited&lt;/font&gt;（1）&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;aborted&lt;/font&gt;（2）&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;commited（1）&lt;br&gt;&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;commited（1）&lt;br&gt;&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;active（0）&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;commited（1）&lt;br&gt;&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;aborted（2）&lt;/font&gt;&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;active（0）&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontFamily=Verdana;fontSize=16;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-2">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-4" value="&lt;table border=&quot;1&quot; width=&quot;100%&quot; style=&quot;width: 100% ; height: 100% ; border-collapse: collapse ; font-size: 14px&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;commited（1）&lt;/font&gt;&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;commited&lt;/font&gt;（1）&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;aborted&lt;/font&gt;（2）&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;commited（1）&lt;br&gt;&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;commited（1）&lt;br&gt;&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;active（0）&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;commited（1）&lt;br&gt;&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;aborted（2）&lt;/font&gt;&lt;/td&gt;&lt;td align=&quot;center&quot;&gt;active（0）&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="text;html=1;strokeColor=none;fillColor=none;overflow=fill;fontFamily=Verdana;fontSize=16;" parent="aefCaqSCdMbnrOnTO0IQ-2" vertex="1">
           <mxGeometry x="150" y="140" width="350" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-3" value="按照XID的顺序（1,2,3...），存储XID的状态（一个字节）；&lt;br&gt;XID 0 超级事务，状态不需要记录；&lt;br&gt;头部8字节记录了这个文件管理事务的个数。" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-2">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-3" value="按照XID的顺序（1,2,3...），存储XID的状态（一个字节）；&lt;br&gt;XID 0 超级事务，状态不需要记录；&lt;br&gt;头部8字节记录了这个文件管理事务的个数。" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;" parent="aefCaqSCdMbnrOnTO0IQ-2" vertex="1">
           <mxGeometry x="75" y="40" width="460" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-5" value="" style="shape=table;html=1;whiteSpace=wrap;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontFamily=Verdana;fontSize=14;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-2">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-5" value="" style="shape=table;html=1;whiteSpace=wrap;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontFamily=Verdana;fontSize=14;" parent="aefCaqSCdMbnrOnTO0IQ-2" vertex="1">
           <mxGeometry x="110" y="110" width="400" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-6" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=14;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-5">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-6" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=14;" parent="aefCaqSCdMbnrOnTO0IQ-5" vertex="1">
           <mxGeometry width="400" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-7" value="length" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-6">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-7" value="length" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" parent="aefCaqSCdMbnrOnTO0IQ-6" vertex="1">
           <mxGeometry width="51" height="20" as="geometry">
             <mxRectangle width="51" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-18" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-6">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-18" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" parent="aefCaqSCdMbnrOnTO0IQ-6" vertex="1">
           <mxGeometry x="51" width="51" height="20" as="geometry">
             <mxRectangle width="51" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-9" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-6">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-9" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" parent="aefCaqSCdMbnrOnTO0IQ-6" vertex="1">
           <mxGeometry x="102" width="48" height="20" as="geometry">
             <mxRectangle width="48" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-19" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-6">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-19" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" parent="aefCaqSCdMbnrOnTO0IQ-6" vertex="1">
           <mxGeometry x="150" width="50" height="20" as="geometry">
             <mxRectangle width="50" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-20" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-6">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-20" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" parent="aefCaqSCdMbnrOnTO0IQ-6" vertex="1">
           <mxGeometry x="200" width="50" height="20" as="geometry">
             <mxRectangle width="50" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-21" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-6">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-21" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" parent="aefCaqSCdMbnrOnTO0IQ-6" vertex="1">
           <mxGeometry x="250" width="52" height="20" as="geometry">
             <mxRectangle width="52" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-22" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-6">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-22" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" parent="aefCaqSCdMbnrOnTO0IQ-6" vertex="1">
           <mxGeometry x="302" width="48" height="20" as="geometry">
             <mxRectangle width="48" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-23" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-6">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-23" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=14;" parent="aefCaqSCdMbnrOnTO0IQ-6" vertex="1">
           <mxGeometry x="350" width="50" height="20" as="geometry">
             <mxRectangle width="50" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-24" value="偏移：(xid-1)+8" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-2">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-24" value="偏移：(xid-1)+8" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" parent="aefCaqSCdMbnrOnTO0IQ-2" vertex="1">
           <mxGeometry x="20" y="150" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-25" value="偏移：0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-2">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-25" value="偏移：0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" parent="aefCaqSCdMbnrOnTO0IQ-2" vertex="1">
           <mxGeometry x="20" y="110" width="70" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-27" value="&lt;font style=&quot;font-size: 16px&quot; face=&quot;Verdana&quot;&gt;&lt;b&gt;DM（Data Manager）&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-27" value="&lt;font style=&quot;font-size: 16px&quot; face=&quot;Verdana&quot;&gt;&lt;b&gt;DM（Data Manager）&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-230" y="903.1800000000001" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-169" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;strokeColor=default;shape=flexArrow;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-30" target="aefCaqSCdMbnrOnTO0IQ-38">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-169" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;strokeColor=default;shape=flexArrow;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="aefCaqSCdMbnrOnTO0IQ-30" target="aefCaqSCdMbnrOnTO0IQ-38" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-1100" y="1823.18" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-30" value="AbstractCache(抽象类)" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;align=center;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-30" value="AbstractCache(抽象类)" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;align=center;" parent="1" vertex="1">
           <mxGeometry x="-1570" y="1888.77" width="760" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-34" value="抽象方法：&lt;br&gt;&amp;nbsp; [1]当资源不在缓存时的获取行为：getForCache(long key)&lt;br&gt;&amp;nbsp; [2]当资源被驱逐时的写回行为：releaseForCache(T obj)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-30">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-34" value="抽象方法：&lt;br&gt;&amp;nbsp; [1]当资源不在缓存时的获取行为：getForCache(long key)&lt;br&gt;&amp;nbsp; [2]当资源被驱逐时的写回行为：releaseForCache(T obj)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;" parent="aefCaqSCdMbnrOnTO0IQ-30" vertex="1">
           <mxGeometry x="20" y="130" width="460" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-35" value="private HashMap cache;                     // 实际缓存的数据&lt;br&gt;private HashMap references;          // 资源的引用个数&lt;br&gt;private HashMap getting;             // 资源是否正在被获取forCache" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-30">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-35" value="private HashMap cache;                     // 实际缓存的数据&lt;br&gt;private HashMap references;          // 资源的引用个数&lt;br&gt;private HashMap getting;             // 资源是否正在被获取forCache" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;" parent="aefCaqSCdMbnrOnTO0IQ-30" vertex="1">
           <mxGeometry x="20" y="40" width="460" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-36" value="默认方法：&lt;br&gt;&amp;nbsp; protected T &lt;font color=&quot;#cc00cc&quot;&gt;get&lt;/font&gt;(long key)&amp;nbsp; // 读取资源，根据情况或从缓存中读、或&lt;font color=&quot;#cc0000&quot;&gt;从源读[1]&lt;/font&gt;（并加到缓存中）&lt;br&gt;&amp;nbsp; protected void &lt;font color=&quot;#cc00cc&quot;&gt;release&lt;/font&gt;(long key)&amp;nbsp; // 释放资源，若引用计数为0，将资源从缓存中&lt;font color=&quot;#cc0000&quot;&gt;驱逐，写回[2]&lt;/font&gt;&lt;br&gt;&amp;nbsp; protected void close()&amp;nbsp; // 关闭缓存，写回所有资源。" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-30">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-36" value="默认方法：&lt;br&gt;&amp;nbsp; protected T &lt;font color=&quot;#cc00cc&quot;&gt;get&lt;/font&gt;(long key)&amp;nbsp; // 读取资源，根据情况或从缓存中读、或&lt;font color=&quot;#cc0000&quot;&gt;从源读[1]&lt;/font&gt;（并加到缓存中）&lt;br&gt;&amp;nbsp; protected void &lt;font color=&quot;#cc00cc&quot;&gt;release&lt;/font&gt;(long key)&amp;nbsp; // 释放资源，若引用计数为0，将资源从缓存中&lt;font color=&quot;#cc0000&quot;&gt;驱逐，写回[2]&lt;/font&gt;&lt;br&gt;&amp;nbsp; protected void close()&amp;nbsp; // 关闭缓存，写回所有资源。" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;" parent="aefCaqSCdMbnrOnTO0IQ-30" vertex="1">
           <mxGeometry x="20" y="210" width="740" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-28" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;缓存框架&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-30">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-28" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;缓存框架&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" parent="aefCaqSCdMbnrOnTO0IQ-30" vertex="1">
           <mxGeometry x="170" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-38" value="PageCacheImpl extends AbstractCache&lt;Page&gt;" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-38" value="PageCacheImpl extends AbstractCache&lt;Page&gt;" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="-1470" y="1380" width="840" height="430" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-45" value="接口方法：&lt;br&gt;&amp;nbsp; int newPage(byte[] initData);&amp;nbsp; // 新建一个页并写回&lt;br&gt;&amp;nbsp; Page getPage(int pgno) throws Exception;&amp;nbsp; // 读取一个页（调用了AbstractCache的&lt;font color=&quot;#cc00cc&quot;&gt;get方法&lt;/font&gt;）&lt;br&gt;&amp;nbsp; void close();&amp;nbsp; // 关闭文件流&lt;br&gt;&amp;nbsp; void release(Page page);&amp;nbsp; // 释放该页的缓存（调用了AbstractCache的&lt;font color=&quot;#cc00cc&quot;&gt;release方法&lt;/font&gt;）&lt;br&gt; &lt;br&gt;&amp;nbsp; void truncateByPgno(int maxPgno);&amp;nbsp; &amp;nbsp;// 根据页号截断文件&lt;br&gt;&amp;nbsp; int getPageNumber();&amp;nbsp; // 获取总页数&lt;br&gt;&amp;nbsp; void flushPage(Page pg); // 写回某一页" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-38">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-45" value="接口方法：&lt;br&gt;&amp;nbsp; int newPage(byte[] initData);&amp;nbsp; // 新建一个页并写回&lt;br&gt;&amp;nbsp; Page getPage(int pgno) throws Exception;&amp;nbsp; // 读取一个页（调用了AbstractCache的&lt;font color=&quot;#cc00cc&quot;&gt;get方法&lt;/font&gt;）&lt;br&gt;&amp;nbsp; void close();&amp;nbsp; // 关闭文件流&lt;br&gt;&amp;nbsp; void release(Page page);&amp;nbsp; // 释放该页的缓存（调用了AbstractCache的&lt;font color=&quot;#cc00cc&quot;&gt;release方法&lt;/font&gt;）&lt;br&gt; &lt;br&gt;&amp;nbsp; void truncateByPgno(int maxPgno);&amp;nbsp; &amp;nbsp;// 根据页号截断文件&lt;br&gt;&amp;nbsp; int getPageNumber();&amp;nbsp; // 获取总页数&lt;br&gt;&amp;nbsp; void flushPage(Page pg); // 写回某一页" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-38" vertex="1">
           <mxGeometry x="10" y="160" width="750" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-46" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;抽象类方法实现：&lt;/span&gt;&lt;/div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; protected Page getForCache(long key)&amp;nbsp; // 从数据库文件（.db）中读取,并包装成Page&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; protected void releaseForCache(Page pg)&amp;nbsp; // 根据是否是脏页决定是否需要写回文件&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#CC00CC;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-38">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-46" value="&lt;div&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;抽象类方法实现：&lt;/span&gt;&lt;/div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; protected Page getForCache(long key)&amp;nbsp; // 从数据库文件（.db）中读取,并包装成Page&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; protected void releaseForCache(Page pg)&amp;nbsp; // 根据是否是脏页决定是否需要写回文件&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#CC00CC;" parent="aefCaqSCdMbnrOnTO0IQ-38" vertex="1">
           <mxGeometry x="10" y="350" width="680" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-47" value="&lt;font style=&quot;font-size: 16px&quot;&gt;PAGE_SIZE = 1 &amp;lt;&amp;lt; 13;&amp;nbsp; // 缓存的一个页的大小为8k&lt;br&gt;private AtomicInteger pageNumbers; //记录打开的.db文件有多少页&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-38">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-47" value="&lt;font style=&quot;font-size: 16px&quot;&gt;PAGE_SIZE = 1 &amp;lt;&amp;lt; 13;&amp;nbsp; // 缓存的一个页的大小为8k&lt;br&gt;private AtomicInteger pageNumbers; //记录打开的.db文件有多少页&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-38" vertex="1">
           <mxGeometry x="10" y="40" width="540" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-48" value="静态方法：&lt;br&gt;&amp;nbsp; public static PageCacheImpl create(String path, long memory)&amp;nbsp; // 创建.db文件并创建PageCacheImpl&lt;br&gt;&amp;nbsp; public static PageCacheImpl open(String path, long memory)&amp;nbsp; // 从已有.db文件中创建PageCacheImpl" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-38">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-48" value="静态方法：&lt;br&gt;&amp;nbsp; public static PageCacheImpl create(String path, long memory)&amp;nbsp; // 创建.db文件并创建PageCacheImpl&lt;br&gt;&amp;nbsp; public static PageCacheImpl open(String path, long memory)&amp;nbsp; // 从已有.db文件中创建PageCacheImpl" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-38" vertex="1">
           <mxGeometry x="10" y="90" width="830" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-37" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;页面缓存&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-38">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-37" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;页面缓存&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" parent="aefCaqSCdMbnrOnTO0IQ-38" vertex="1">
           <mxGeometry x="115" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-39" value="PageImpl" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fontStyle=0;spacing=2;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-39" value="PageImpl" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fontStyle=0;spacing=2;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="-1910" y="1490" width="405" height="270" as="geometry">
             <mxRectangle x="200" y="900" width="110" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-40" value="    private int pageNumber; // 页号&lt;br&gt;    private byte[] data; // 具体数据&lt;br&gt;    private boolean dirty; // 是否为脏页&lt;br&gt;    private Lock lock;&amp;nbsp;&lt;br&gt; &lt;br&gt;    private PageCache pc; // 缓存了此页的PageCache" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-39">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-40" value="    private int pageNumber; // 页号&lt;br&gt;    private byte[] data; // 具体数据&lt;br&gt;    private boolean dirty; // 是否为脏页&lt;br&gt;    private Lock lock;&amp;nbsp;&lt;br&gt; &lt;br&gt;    private PageCache pc; // 缓存了此页的PageCache" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-39" vertex="1">
           <mxGeometry x="5" y="40" width="400" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-41" value="提供了一些基本的&lt;br&gt;set\get方法&lt;br&gt;lock\unlock方法&lt;br&gt;在缓存中释放该页的release方法" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-39">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-41" value="提供了一些基本的&lt;br&gt;set\get方法&lt;br&gt;lock\unlock方法&lt;br&gt;在缓存中释放该页的release方法" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-39" vertex="1">
           <mxGeometry x="5" y="170" width="250" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-43" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#000000;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-38" target="aefCaqSCdMbnrOnTO0IQ-39">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-43" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#000000;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="aefCaqSCdMbnrOnTO0IQ-38" target="aefCaqSCdMbnrOnTO0IQ-39" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-185.92000000000002" y="2543.18" as="sourcePoint" />
             <mxPoint x="304.08" y="2413.18" as="targetPoint" />
@@ -131,209 +131,209 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-56" value="DB文件（.db）" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-56" value="DB文件（.db）" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="-1030" y="833.1800000000001" width="367.5" height="310" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-57" value="" style="shape=table;html=1;whiteSpace=wrap;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-56">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-57" value="" style="shape=table;html=1;whiteSpace=wrap;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-56" vertex="1">
           <mxGeometry x="17.5" y="60" width="322.5" height="158" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-58" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-57">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-58" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-57" vertex="1">
           <mxGeometry width="322.5" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-59" value="&lt;div style=&quot;text-align: left ; font-size: 12px&quot;&gt;&lt;span&gt;第1页（校验页）&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; font-size: 12px&quot;&gt;&lt;span&gt;100~107：随机字节&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; font-size: 12px&quot;&gt;&lt;span&gt;108~115：拷贝字节&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-58">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-59" value="&lt;div style=&quot;text-align: left ; font-size: 12px&quot;&gt;&lt;span&gt;第1页（校验页）&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; font-size: 12px&quot;&gt;&lt;span&gt;100~107：随机字节&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; font-size: 12px&quot;&gt;&lt;span&gt;108~115：拷贝字节&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-58" vertex="1">
           <mxGeometry width="150" height="70" as="geometry">
             <mxRectangle width="150" height="70" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-60" value="&lt;span style=&quot;font-size: 12px ; text-align: left&quot;&gt;第2页&lt;br&gt;（普通页）&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-58">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-60" value="&lt;span style=&quot;font-size: 12px ; text-align: left&quot;&gt;第2页&lt;br&gt;（普通页）&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-58" vertex="1">
           <mxGeometry x="150" width="90" height="70" as="geometry">
             <mxRectangle width="90" height="70" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-61" value="&lt;span style=&quot;font-size: 12px ; text-align: left&quot;&gt;第3页&lt;br&gt;（普通页）&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-58">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-61" value="&lt;span style=&quot;font-size: 12px ; text-align: left&quot;&gt;第3页&lt;br&gt;（普通页）&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-58" vertex="1">
           <mxGeometry x="240" width="83" height="70" as="geometry">
             <mxRectangle width="83" height="70" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-62" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-57">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-62" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-57" vertex="1">
           <mxGeometry y="70" width="322.5" height="88" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-63" value="&lt;span style=&quot;font-size: 12px ; text-align: left&quot;&gt;第4页（普通页）&lt;/span&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;br&gt;2字节：空闲位置偏移&lt;br&gt;剩下的：实际存储数据&lt;br&gt;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;align=center;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-62">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-63" value="&lt;span style=&quot;font-size: 12px ; text-align: left&quot;&gt;第4页（普通页）&lt;/span&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;br&gt;2字节：空闲位置偏移&lt;br&gt;剩下的：实际存储数据&lt;br&gt;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;align=center;" parent="aefCaqSCdMbnrOnTO0IQ-62" vertex="1">
           <mxGeometry width="150" height="88" as="geometry">
             <mxRectangle width="150" height="88" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-64" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-62">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-64" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-62" vertex="1">
           <mxGeometry x="150" width="90" height="88" as="geometry">
             <mxRectangle width="90" height="88" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-65" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-62">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-65" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-62" vertex="1">
           <mxGeometry x="240" width="83" height="88" as="geometry">
             <mxRectangle width="83" height="88" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-70" value="每个页的大小为8K" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-56">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-70" value="每个页的大小为8K" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-56" vertex="1">
           <mxGeometry x="100" y="30" width="150" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-130" value="&lt;font style=&quot;font-size: 14px&quot;&gt;实际存储数据结构：&lt;br&gt;&lt;span&gt;[ValidFlag] [DataSize] [Data]&lt;/span&gt;&lt;br&gt;&lt;span&gt;ValidFlag占1字节，DataSize占2字节&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-56">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-130" value="&lt;font style=&quot;font-size: 14px&quot;&gt;实际存储数据结构：&lt;br&gt;&lt;span&gt;[ValidFlag] [DataSize] [Data]&lt;/span&gt;&lt;br&gt;&lt;span&gt;ValidFlag占1字节，DataSize占2字节&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-56" vertex="1">
           <mxGeometry x="17.5" y="230" width="260" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-75" value="日志文件（.log）" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-75" value="日志文件（.log）" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="413" y="1610" width="620" height="420" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-76" value="" style="shape=table;html=1;whiteSpace=wrap;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-75">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-76" value="" style="shape=table;html=1;whiteSpace=wrap;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-75" vertex="1">
           <mxGeometry x="60" y="30" width="437.5" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-77" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-76">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-77" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-76" vertex="1">
           <mxGeometry width="437.5" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-78" value="&lt;font style=&quot;font-size: 12px&quot;&gt;XCheckSum：4字节&lt;br&gt;对所有日志求校验和&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-77">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-78" value="&lt;font style=&quot;font-size: 12px&quot;&gt;XCheckSum：4字节&lt;br&gt;对所有日志求校验和&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-77" vertex="1">
           <mxGeometry width="127" height="80" as="geometry">
             <mxRectangle width="127" height="80" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-79" value="&lt;font style=&quot;font-size: 12px&quot;&gt;Log1:&lt;br&gt;[Size][Checksum][&lt;font color=&quot;#cc6600&quot;&gt;Data&lt;/font&gt;]&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-77">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-79" value="&lt;font style=&quot;font-size: 12px&quot;&gt;Log1:&lt;br&gt;[Size][Checksum][&lt;font color=&quot;#cc6600&quot;&gt;Data&lt;/font&gt;]&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-77" vertex="1">
           <mxGeometry x="127" width="160" height="80" as="geometry">
             <mxRectangle width="160" height="80" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-80" value="&lt;span style=&quot;font-size: 12px&quot;&gt;Log2:&lt;/span&gt;&lt;br style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;[Size][Checksum][&lt;font color=&quot;#cc6600&quot;&gt;Data&lt;/font&gt;]&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-77">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-80" value="&lt;span style=&quot;font-size: 12px&quot;&gt;Log2:&lt;/span&gt;&lt;br style=&quot;font-size: 12px&quot;&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;[Size][Checksum][&lt;font color=&quot;#cc6600&quot;&gt;Data&lt;/font&gt;]&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-77" vertex="1">
           <mxGeometry x="287" width="151" height="80" as="geometry">
             <mxRectangle width="151" height="80" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-81" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-76">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-81" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-76" vertex="1">
           <mxGeometry y="80" width="437.5" height="85" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-82" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-81">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-82" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-81" vertex="1">
           <mxGeometry width="127" height="85" as="geometry">
             <mxRectangle width="127" height="85" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-83" value="&lt;font style=&quot;font-size: 12px&quot;&gt;Size：4字节，&lt;br&gt;标识data段字节数；&lt;br&gt;Checksum：4字节，&lt;br&gt;该条日志校验和&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-81">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-83" value="&lt;font style=&quot;font-size: 12px&quot;&gt;Size：4字节，&lt;br&gt;标识data段字节数；&lt;br&gt;Checksum：4字节，&lt;br&gt;该条日志校验和&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-81" vertex="1">
           <mxGeometry x="127" width="160" height="85" as="geometry">
             <mxRectangle width="160" height="85" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-84" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-81">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-84" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-81" vertex="1">
           <mxGeometry x="287" width="151" height="85" as="geometry">
             <mxRectangle width="151" height="85" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-85" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-76">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-85" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-76" vertex="1">
           <mxGeometry y="165" width="437.5" height="85" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-86" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-85">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-86" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-85" vertex="1">
           <mxGeometry width="127" height="85" as="geometry">
             <mxRectangle width="127" height="85" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-87" value="。。。" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-85">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-87" value="。。。" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-85" vertex="1">
           <mxGeometry x="127" width="160" height="85" as="geometry">
             <mxRectangle width="160" height="85" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-88" value="&lt;font style=&quot;font-size: 12px&quot;&gt;BadTail（可能没有）&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-85">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-88" value="&lt;font style=&quot;font-size: 12px&quot;&gt;BadTail（可能没有）&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;pointerEvents=1;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-85" vertex="1">
           <mxGeometry x="287" width="151" height="85" as="geometry">
             <mxRectangle width="151" height="85" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-96" value="" style="shape=table;html=1;whiteSpace=wrap;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-75">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-96" value="" style="shape=table;html=1;whiteSpace=wrap;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-75" vertex="1">
           <mxGeometry x="20" y="320" width="580" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-97" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-96">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-97" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-96" vertex="1">
           <mxGeometry width="580" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-98" value="&lt;font style=&quot;font-size: 12px&quot;&gt;updateLog:&lt;br&gt;[LogType] [XID] [UID] [OldRaw] [NewRaw]&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-97">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-98" value="&lt;font style=&quot;font-size: 12px&quot;&gt;updateLog:&lt;br&gt;[LogType] [XID] [UID] [OldRaw] [NewRaw]&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-97" vertex="1">
           <mxGeometry width="290" height="55" as="geometry">
             <mxRectangle width="290" height="55" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-99" value="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;span&gt;insertLog:&lt;/span&gt;&lt;br&gt;&lt;span&gt;[LogType] [XID] [Pgno] [Offset] [Raw]&lt;/span&gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-97">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-99" value="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;span&gt;insertLog:&lt;/span&gt;&lt;br&gt;&lt;span&gt;[LogType] [XID] [Pgno] [Offset] [Raw]&lt;/span&gt;&lt;/font&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-97" vertex="1">
           <mxGeometry x="290" width="290" height="55" as="geometry">
             <mxRectangle width="290" height="55" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-112" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;font color=&quot;#cc6600&quot;&gt;Data&lt;/font&gt;的两种格式：&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-75">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-112" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;font color=&quot;#cc6600&quot;&gt;Data&lt;/font&gt;的两种格式：&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-75" vertex="1">
           <mxGeometry x="20" y="295" width="150" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-117" value="Uid:由页号和页内偏移组成的一个 8 字节无符号整数，页号和偏移各占 4 字节。" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-75">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-117" value="Uid:由页号和页内偏移组成的一个 8 字节无符号整数，页号和偏移各占 4 字节。" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-75" vertex="1">
           <mxGeometry x="10" y="390" width="590" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-89" value="LoggerImpl" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-89" value="LoggerImpl" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="-327" y="1550" width="700" height="330" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-90" value="接口方法：&lt;br&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void log(byte[] data); // 向日志文件写入日志（写入文件、更新文件校验和并写入磁盘）&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void truncate(long x) throws Exception;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; byte[] next();&amp;nbsp; // 根据position读取下一条日志的完整内容&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void rewind();&amp;nbsp; // 回到第一条日志的位置&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void close();&amp;nbsp; // 关闭文件流&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-89">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-90" value="接口方法：&lt;br&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void log(byte[] data); // 向日志文件写入日志（写入文件、更新文件校验和并写入磁盘）&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void truncate(long x) throws Exception;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; byte[] next();&amp;nbsp; // 根据position读取下一条日志的完整内容&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void rewind();&amp;nbsp; // 回到第一条日志的位置&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void close();&amp;nbsp; // 关闭文件流&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-89" vertex="1">
           <mxGeometry x="10" y="92.5" width="690" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-91" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;静态方法：&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; public static Logger create(String path) // 创建日志文件并新建LoggerImpl实例&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; public static Logger open(String path) // 打开日志文件并新建LoggerImpl实例，&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 并检查校验和、去除badTail&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-89">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-91" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;静态方法：&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; public static Logger create(String path) // 创建日志文件并新建LoggerImpl实例&amp;nbsp;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; public static Logger open(String path) // 打开日志文件并新建LoggerImpl实例，&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 并检查校验和、去除badTail&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-89" vertex="1">
           <mxGeometry x="10" y="220" width="640" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-95" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; private long position;&amp;nbsp; // 当前日志指针的位置&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private long fileSize;&amp;nbsp; // 初始化时记录，log操作不更新&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private int xChecksum;&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-89">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-95" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; private long position;&amp;nbsp; // 当前日志指针的位置&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private long fileSize;&amp;nbsp; // 初始化时记录，log操作不更新&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private int xChecksum;&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-89" vertex="1">
           <mxGeometry x="-10" y="30" width="450" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-94" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;日志操作类&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-89">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-94" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;日志操作类&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" parent="aefCaqSCdMbnrOnTO0IQ-89" vertex="1">
           <mxGeometry x="170" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-113" value="Recover" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-113" value="Recover" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="710" y="1303.18" width="787" height="270" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-116" value="// Recover的主入口，调用下面两个方法&lt;br&gt;public static void recover(TransactionManager tm, Logger lg, PageCache pc)&amp;nbsp;&lt;br&gt;// 重做&lt;span style=&quot;text-align: center&quot;&gt;重做所有已完成事务&lt;/span&gt;&lt;br&gt;private static void redoTranscations(TransactionManager tm, Logger lg, PageCache pc)&lt;br&gt;// 撤销&lt;span style=&quot;text-align: center&quot;&gt;撤销所有未完成事务&lt;/span&gt;&lt;br&gt;private static void undoTranscations(TransactionManager tm, Logger lg, PageCache pc)&lt;br&gt;&lt;br&gt;// 具体重做或者撤销某一条日志，解析日志信息，并调用了PageX的方法recoverUpdate\recoverInsert&lt;br&gt;private static void doInsertLog(PageCache pc, byte[] log, int flag)&lt;br&gt;private static void doUpdateLog(PageCache pc, byte[] log, int flag)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-113">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-116" value="// Recover的主入口，调用下面两个方法&lt;br&gt;public static void recover(TransactionManager tm, Logger lg, PageCache pc)&amp;nbsp;&lt;br&gt;// 重做&lt;span style=&quot;text-align: center&quot;&gt;重做所有已完成事务&lt;/span&gt;&lt;br&gt;private static void redoTranscations(TransactionManager tm, Logger lg, PageCache pc)&lt;br&gt;// 撤销&lt;span style=&quot;text-align: center&quot;&gt;撤销所有未完成事务&lt;/span&gt;&lt;br&gt;private static void undoTranscations(TransactionManager tm, Logger lg, PageCache pc)&lt;br&gt;&lt;br&gt;// 具体重做或者撤销某一条日志，解析日志信息，并调用了PageX的方法recoverUpdate\recoverInsert&lt;br&gt;private static void doInsertLog(PageCache pc, byte[] log, int flag)&lt;br&gt;private static void doUpdateLog(PageCache pc, byte[] log, int flag)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-113" vertex="1">
           <mxGeometry x="17" y="40" width="770" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-114" value="&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;数据恢复&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-113">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-114" value="&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;数据恢复&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" parent="aefCaqSCdMbnrOnTO0IQ-113" vertex="1">
           <mxGeometry x="240" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-121" value="PageIndex" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-121" value="PageIndex" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="-730" y="1930.3600000000001" width="740" height="216.82" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-122" value="&lt;div&gt;// 将一页大小划成40个区间&lt;/div&gt;&lt;div&gt;&amp;nbsp; private static final int INTERVALS_NO = 40;&lt;/div&gt;&lt;div&gt;&amp;nbsp; private static final int THRESHOLD = PageCache.PAGE_SIZE / INTERVALS_NO;&lt;/div&gt;// 按照空闲空间大小（40种情况），缓存对应的页Info(包括页号和空闲空间大小)_&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;span&gt;private List&amp;lt;PageInfo&amp;gt;[] lists;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-121">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-122" value="&lt;div&gt;// 将一页大小划成40个区间&lt;/div&gt;&lt;div&gt;&amp;nbsp; private static final int INTERVALS_NO = 40;&lt;/div&gt;&lt;div&gt;&amp;nbsp; private static final int THRESHOLD = PageCache.PAGE_SIZE / INTERVALS_NO;&lt;/div&gt;// 按照空闲空间大小（40种情况），缓存对应的页Info(包括页号和空闲空间大小)_&lt;div&gt;&amp;nbsp;&amp;nbsp;&lt;span&gt;private List&amp;lt;PageInfo&amp;gt;[] lists;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-121" vertex="1">
           <mxGeometry x="10" y="30" width="660" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-124" value="方法：&lt;br&gt;public PageInfo select(int spaceSize)&amp;nbsp; // 按照所需空闲空间选择一个页，并将该页从缓存中移除&lt;br&gt;public void add(int pgno, int freeSpace) // 上层模块用完了该页，需将其重新插入PageIndex" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-121">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-124" value="方法：&lt;br&gt;public PageInfo select(int spaceSize)&amp;nbsp; // 按照所需空闲空间选择一个页，并将该页从缓存中移除&lt;br&gt;public void add(int pgno, int freeSpace) // 上层模块用完了该页，需将其重新插入PageIndex" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-121" vertex="1">
           <mxGeometry x="10" y="130" width="730" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-120" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;页面索引（&lt;/b&gt;按照空闲空间大小缓存页面&lt;b&gt;）&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-121">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-120" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;页面索引（&lt;/b&gt;按照空闲空间大小缓存页面&lt;b&gt;）&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" parent="aefCaqSCdMbnrOnTO0IQ-121" vertex="1">
           <mxGeometry x="10" width="300" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-125" value="DataItemImpl" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-125" value="DataItemImpl" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="670" y="693.1800000000001" width="710" height="530" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-128" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; private SubArray raw;&amp;nbsp; // 当前数据&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private byte[] oldRaw;&amp;nbsp; // 旧数据&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private DataManagerImpl dm;&amp;nbsp; // 对应的DataManager&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private long uid;&amp;nbsp; // 存储了该DataItem的页号和偏移&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private Page pg;&amp;nbsp; // 存储了该DataItem的页&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-125">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-128" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; private SubArray raw;&amp;nbsp; // 当前数据&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private byte[] oldRaw;&amp;nbsp; // 旧数据&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private DataManagerImpl dm;&amp;nbsp; // 对应的DataManager&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private long uid;&amp;nbsp; // 存储了该DataItem的页号和偏移&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private Page pg;&amp;nbsp; // 存储了该DataItem的页&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-125" vertex="1">
           <mxGeometry x="-10" y="30" width="470" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-129" value="保存的数据结构：&lt;br&gt;[ValidFlag] [DataSize] [Data]&lt;br&gt;ValidFlag占1字节，DataSize占2字节" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-125">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-129" value="保存的数据结构：&lt;br&gt;[ValidFlag] [DataSize] [Data]&lt;br&gt;ValidFlag占1字节，DataSize占2字节" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-125" vertex="1">
           <mxGeometry x="10" y="140" width="290" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-131" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;静态方法：&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&amp;nbsp; // 将数据包装成上方格式&lt;/span&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&amp;nbsp; &lt;br&gt;&amp;nbsp; public static byte[] wrapDataItemRaw(byte[] raw)&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&amp;nbsp; //从页面的offset处解析出dataItem&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&amp;nbsp; public static DataItem parseDataItem(Page pg, short offset, DataManagerImpl dm)&lt;br&gt;&amp;nbsp; // 将当前数据设置为无效，即删除该数据&lt;br&gt;&lt;/span&gt;&amp;nbsp; public static void setDataItemRawInvalid(byte[] raw)&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-125">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-131" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;静态方法：&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&amp;nbsp; // 将数据包装成上方格式&lt;/span&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&amp;nbsp; &lt;br&gt;&amp;nbsp; public static byte[] wrapDataItemRaw(byte[] raw)&amp;nbsp;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&amp;nbsp; //从页面的offset处解析出dataItem&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&amp;nbsp; public static DataItem parseDataItem(Page pg, short offset, DataManagerImpl dm)&lt;br&gt;&amp;nbsp; // 将当前数据设置为无效，即删除该数据&lt;br&gt;&lt;/span&gt;&amp;nbsp; public static void setDataItemRawInvalid(byte[] raw)&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-125" vertex="1">
           <mxGeometry x="10" y="360" width="700" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-132" value="接口方法：&lt;br&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; SubArray data(); // 获取[Data]&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void before();&amp;nbsp; // 将数据复制一份到oldRaw&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void unBefore();&amp;nbsp; // 将oldRaw数据还原到raw&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void after(long xid);&amp;nbsp; // 将操作该DataItem的日志落盘&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void release(); // 释放该DataItem&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-125">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-132" value="接口方法：&lt;br&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; SubArray data(); // 获取[Data]&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void before();&amp;nbsp; // 将数据复制一份到oldRaw&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void unBefore();&amp;nbsp; // 将oldRaw数据还原到raw&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void after(long xid);&amp;nbsp; // 将操作该DataItem的日志落盘&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void release(); // 释放该DataItem&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-125" vertex="1">
           <mxGeometry x="10" y="210" width="450" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-126" value="TansactionManagerImpl" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-126" value="TansactionManagerImpl" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="-260" y="70" width="590" height="340" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-133" value="接口方法：&lt;br&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; long begin();&amp;nbsp; // 开启一个事务，更新文件头和事务状态&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void commit(long xid);&amp;nbsp; // 提交事务，更新文件中事务状态&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void abort(long xid);&amp;nbsp; // 撤销事务，更新文件中事务状态&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; boolean isActive(long xid);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; boolean isCommitted(long xid);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; boolean isAborted(long xid);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void close(); // 关闭文件流&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private void checkXIDCounter() // 检查文件是否合法&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-126">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-133" value="接口方法：&lt;br&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; long begin();&amp;nbsp; // 开启一个事务，更新文件头和事务状态&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void commit(long xid);&amp;nbsp; // 提交事务，更新文件中事务状态&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void abort(long xid);&amp;nbsp; // 撤销事务，更新文件中事务状态&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; boolean isActive(long xid);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; boolean isCommitted(long xid);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; boolean isAborted(long xid);&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void close(); // 关闭文件流&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private void checkXIDCounter() // 检查文件是否合法&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-126" vertex="1">
           <mxGeometry x="10" y="20" width="480" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-134" value="静态方法：&lt;br&gt;&amp;nbsp; // 创建XID文件并写XID文件头，并创建对应TransactionManagerImpl实例&lt;br&gt;&amp;nbsp; public static TransactionManagerImpl create(String path)&lt;br&gt;&amp;nbsp; // 打开XID文件，并创建对应TransactionManagerImpl实例&lt;br&gt;&amp;nbsp; public static TransactionManagerImpl open(String path)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-126">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-134" value="静态方法：&lt;br&gt;&amp;nbsp; // 创建XID文件并写XID文件头，并创建对应TransactionManagerImpl实例&lt;br&gt;&amp;nbsp; public static TransactionManagerImpl create(String path)&lt;br&gt;&amp;nbsp; // 打开XID文件，并创建对应TransactionManagerImpl实例&lt;br&gt;&amp;nbsp; public static TransactionManagerImpl open(String path)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-126" vertex="1">
           <mxGeometry x="10" y="230" width="580" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-127" value="DataManagerImpl extends AbstractCache&lt;DataItem&gt;" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-127" value="DataManagerImpl extends AbstractCache&lt;DataItem&gt;" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="-567" y="970.0000000000001" width="1180" height="460" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-135" value="抽象类方法实现：&lt;br&gt;&amp;nbsp; protected DataItem getForCache(long uid)&amp;nbsp; //&amp;nbsp;从 uid 中解析出页号，从 pageCache 中获取到页面，再根据偏移，解析出DataItem&lt;br&gt;&amp;nbsp;&amp;nbsp;protected void releaseForCache(DataItem di)&amp;nbsp; //&amp;nbsp;将 DataItem 写回数据源，将 DataItem 所在的页 release 即可" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-127">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-135" value="抽象类方法实现：&lt;br&gt;&amp;nbsp; protected DataItem getForCache(long uid)&amp;nbsp; //&amp;nbsp;从 uid 中解析出页号，从 pageCache 中获取到页面，再根据偏移，解析出DataItem&lt;br&gt;&amp;nbsp;&amp;nbsp;protected void releaseForCache(DataItem di)&amp;nbsp; //&amp;nbsp;将 DataItem 写回数据源，将 DataItem 所在的页 release 即可" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-127" vertex="1">
           <mxGeometry x="30" y="36.82" width="1010" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-137" value="&lt;div&gt;&lt;span&gt;静态方法：&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; // 创建文件&lt;font color=&quot;#c24e4e&quot;&gt;&lt;b&gt;db文件、日志文件&lt;/b&gt;&lt;/font&gt;，创建对应的&lt;b&gt;&lt;font color=&quot;#a1668c&quot;&gt;PageCache和Logger&lt;/font&gt;&lt;/b&gt;，并创建DataManagerImpl，并对第一页进行初始化&lt;/div&gt;&amp;nbsp; public static DataManager create(String path, long mem, TransactionManager tm)&lt;br&gt;&amp;nbsp; // 打开文件，创建对应的PageCache和Logger，并创建DataManagerImpl，&lt;br&gt;&amp;nbsp; // 对第一页进行校验，判断是否执行恢复流程，&lt;font color=&quot;#a1668c&quot;&gt;&lt;b&gt;填充PageIndex&lt;/b&gt;&lt;/font&gt;,并重新对第一页生成随机字节&lt;br&gt;&amp;nbsp; public static DataManager open(String path, long mem, TransactionManager tm)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-127">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-137" value="&lt;div&gt;&lt;span&gt;静态方法：&lt;/span&gt;&lt;span&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; // 创建文件&lt;font color=&quot;#c24e4e&quot;&gt;&lt;b&gt;db文件、日志文件&lt;/b&gt;&lt;/font&gt;，创建对应的&lt;b&gt;&lt;font color=&quot;#a1668c&quot;&gt;PageCache和Logger&lt;/font&gt;&lt;/b&gt;，并创建DataManagerImpl，并对第一页进行初始化&lt;/div&gt;&amp;nbsp; public static DataManager create(String path, long mem, TransactionManager tm)&lt;br&gt;&amp;nbsp; // 打开文件，创建对应的PageCache和Logger，并创建DataManagerImpl，&lt;br&gt;&amp;nbsp; // 对第一页进行校验，判断是否执行恢复流程，&lt;font color=&quot;#a1668c&quot;&gt;&lt;b&gt;填充PageIndex&lt;/b&gt;&lt;/font&gt;,并重新对第一页生成随机字节&lt;br&gt;&amp;nbsp; public static DataManager open(String path, long mem, TransactionManager tm)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-127" vertex="1">
           <mxGeometry x="30" y="296.82" width="900" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-138" value="接口方法：&lt;br&gt;&lt;b&gt;功能供上层使用：&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;DataItem read(long uid)&amp;nbsp; &amp;nbsp; // 根据uid读取DataItem，调用&lt;font color=&quot;#cc00cc&quot;&gt;super.get()&lt;/font&gt;方法，同时实现了缓存功能。&lt;br&gt;&amp;nbsp; long insert(long xid, byte[] data)&amp;nbsp; // 插入数据&lt;br&gt;&amp;nbsp; //&amp;nbsp;在 pageIndex 中获取一个足以存储插入内容的页面的页号，&lt;br&gt;&amp;nbsp; // 获取页面后，首先需要写入插入日志，接着才可以通过 pageX 插入数据，并返回插入位置的偏移。&lt;br&gt;&amp;nbsp; // 最后需要将页面信息重新插入 pageIndex&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;public void close()&amp;nbsp; //&amp;nbsp;执行缓存和日志的关闭流程,并设置第一页字节校验" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-127">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-138" value="接口方法：&lt;br&gt;&lt;b&gt;功能供上层使用：&lt;/b&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;DataItem read(long uid)&amp;nbsp; &amp;nbsp; // 根据uid读取DataItem，调用&lt;font color=&quot;#cc00cc&quot;&gt;super.get()&lt;/font&gt;方法，同时实现了缓存功能。&lt;br&gt;&amp;nbsp; long insert(long xid, byte[] data)&amp;nbsp; // 插入数据&lt;br&gt;&amp;nbsp; //&amp;nbsp;在 pageIndex 中获取一个足以存储插入内容的页面的页号，&lt;br&gt;&amp;nbsp; // 获取页面后，首先需要写入插入日志，接着才可以通过 pageX 插入数据，并返回插入位置的偏移。&lt;br&gt;&amp;nbsp; // 最后需要将页面信息重新插入 pageIndex&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;public void close()&amp;nbsp; //&amp;nbsp;执行缓存和日志的关闭流程,并设置第一页字节校验" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-127" vertex="1">
           <mxGeometry x="30" y="106.82" width="770" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-144" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;entryX=0.552;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-127" target="aefCaqSCdMbnrOnTO0IQ-125">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-144" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;entryX=0.552;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="aefCaqSCdMbnrOnTO0IQ-127" target="aefCaqSCdMbnrOnTO0IQ-125" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-185.92000000000002" y="1243.18" as="sourcePoint" />
             <mxPoint x="-135.92000000000002" y="1193.18" as="targetPoint" />
@@ -343,7 +343,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-140" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;exitX=-0.003;exitY=0.403;exitDx=0;exitDy=0;entryX=1.01;entryY=0.819;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-134" target="aefCaqSCdMbnrOnTO0IQ-3">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-140" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;exitX=-0.003;exitY=0.403;exitDx=0;exitDy=0;entryX=1.01;entryY=0.819;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="aefCaqSCdMbnrOnTO0IQ-134" target="aefCaqSCdMbnrOnTO0IQ-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-130" y="270" as="sourcePoint" />
             <mxPoint x="-80" y="220" as="targetPoint" />
@@ -352,7 +352,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-147" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=-0.004;exitY=0.317;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-116" target="aefCaqSCdMbnrOnTO0IQ-89">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-147" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=-0.004;exitY=0.317;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="aefCaqSCdMbnrOnTO0IQ-116" target="aefCaqSCdMbnrOnTO0IQ-89" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="64.07999999999998" y="1543.18" as="sourcePoint" />
             <mxPoint x="114.07999999999998" y="1493.18" as="targetPoint" />
@@ -361,7 +361,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-148" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;exitX=1.008;exitY=0.559;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-91" target="aefCaqSCdMbnrOnTO0IQ-75">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-148" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;exitX=1.008;exitY=0.559;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="aefCaqSCdMbnrOnTO0IQ-91" target="aefCaqSCdMbnrOnTO0IQ-75" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-215.92000000000002" y="1773.18" as="sourcePoint" />
             <mxPoint x="-165.92000000000002" y="1723.18" as="targetPoint" />
@@ -370,7 +370,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-149" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;entryX=0.482;entryY=-0.009;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.004;exitY=0.809;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-137" target="aefCaqSCdMbnrOnTO0IQ-113">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-149" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;entryX=0.482;entryY=-0.009;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1.004;exitY=0.809;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="aefCaqSCdMbnrOnTO0IQ-137" target="aefCaqSCdMbnrOnTO0IQ-113" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-215.92000000000002" y="1423.18" as="sourcePoint" />
             <mxPoint x="-165.92000000000002" y="1373.18" as="targetPoint" />
@@ -379,7 +379,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-150" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;entryX=0.449;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.587;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-137" target="aefCaqSCdMbnrOnTO0IQ-89">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-150" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;entryX=0.449;entryY=-0.006;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.587;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="aefCaqSCdMbnrOnTO0IQ-137" target="aefCaqSCdMbnrOnTO0IQ-89" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="536" y="1163.18" as="sourcePoint" />
             <mxPoint x="-345.92" y="1603.18" as="targetPoint" />
@@ -389,7 +389,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-160" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-127" target="aefCaqSCdMbnrOnTO0IQ-159">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-160" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="aefCaqSCdMbnrOnTO0IQ-127" target="aefCaqSCdMbnrOnTO0IQ-159" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-600" y="1200" as="sourcePoint" />
             <mxPoint x="-755.92" y="2098.18" as="targetPoint" />
@@ -398,34 +398,34 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-163" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-163" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="-1720" y="753.1800000000001" width="604.08" height="580" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-159" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-163">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-159" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-163" vertex="1">
           <mxGeometry width="604.08" height="580" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-151" value="&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;数据页管理（工具类）&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-163">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-151" value="&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;数据页管理（工具类）&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;fontFamily=Verdana;" parent="aefCaqSCdMbnrOnTO0IQ-163" vertex="1">
           <mxGeometry x="216.57999999999993" y="20" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-152" value="PageOne" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-163">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-152" value="PageOne" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-163" vertex="1">
           <mxGeometry x="100" y="67.5" width="375" height="165" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-153" value="&lt;div&gt;&lt;span&gt;静态方法：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;public static byte[] InitRaw() //初始化第一页&lt;br&gt;&lt;/span&gt;&lt;/div&gt;setVcOpen(Page pg) // 启动时设置初始字节&lt;br&gt;setVcClose(Page pg)&amp;nbsp; //&amp;nbsp;关闭时拷贝字节&lt;br&gt;checkVc(Page pg) //&amp;nbsp;校验字节：" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-152">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-153" value="&lt;div&gt;&lt;span&gt;静态方法：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;public static byte[] InitRaw() //初始化第一页&lt;br&gt;&lt;/span&gt;&lt;/div&gt;setVcOpen(Page pg) // 启动时设置初始字节&lt;br&gt;setVcClose(Page pg)&amp;nbsp; //&amp;nbsp;关闭时拷贝字节&lt;br&gt;checkVc(Page pg) //&amp;nbsp;校验字节：" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-152" vertex="1">
           <mxGeometry x="15" y="50" width="360" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-154" value="第一页用来做启动检查" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-152">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-154" value="第一页用来做启动检查" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-152" vertex="1">
           <mxGeometry x="15" y="35" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-155" value="PageX" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-163">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-155" value="PageX" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="aefCaqSCdMbnrOnTO0IQ-163" vertex="1">
           <mxGeometry x="19.539999999999964" y="260" width="565" height="300" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-156" value="一个普通页面&lt;br&gt;以一个 2 字节无符号数起始，表示这一页的空闲位置的偏移" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-155">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-156" value="一个普通页面&lt;br&gt;以一个 2 字节无符号数起始，表示这一页的空闲位置的偏移" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-155" vertex="1">
           <mxGeometry x="15" y="29" width="440" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-157" value="静态方法：&lt;br&gt;&amp;nbsp; getFSO(byte[] raw)&amp;nbsp; // 获取该页的空闲位置起始偏移&lt;br&gt;&amp;nbsp; setFSO(byte[] raw, short ofData)&amp;nbsp; // 更新该页的空闲位置偏移&lt;br&gt;&amp;nbsp; insert(Page pg, byte[] raw)&amp;nbsp;// 将raw插入pg中，返回插入位置&lt;br&gt;&amp;nbsp; getFreeSpace(Page pg) //&amp;nbsp;// 获取页面的空闲空间大小&lt;br&gt;&lt;br&gt;用于在数据库崩溃后重新打开时，恢复例程直接插入数据以及修改数据使用:&lt;br&gt;//将raw插入pg中的offset位置，并将pg的offset设置为较大的offset&lt;br&gt;&amp;nbsp; recoverInsert(Page pg, byte[] raw, short offset)&amp;nbsp;&lt;br&gt;//将raw插入pg中的offset位置，不更新offset&lt;br&gt;&amp;nbsp; recoverUpdate(Page pg, byte[] raw, short offset)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="aefCaqSCdMbnrOnTO0IQ-155">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-157" value="静态方法：&lt;br&gt;&amp;nbsp; getFSO(byte[] raw)&amp;nbsp; // 获取该页的空闲位置起始偏移&lt;br&gt;&amp;nbsp; setFSO(byte[] raw, short ofData)&amp;nbsp; // 更新该页的空闲位置偏移&lt;br&gt;&amp;nbsp; insert(Page pg, byte[] raw)&amp;nbsp;// 将raw插入pg中，返回插入位置&lt;br&gt;&amp;nbsp; getFreeSpace(Page pg) //&amp;nbsp;// 获取页面的空闲空间大小&lt;br&gt;&lt;br&gt;用于在数据库崩溃后重新打开时，恢复例程直接插入数据以及修改数据使用:&lt;br&gt;//将raw插入pg中的offset位置，并将pg的offset设置为较大的offset&lt;br&gt;&amp;nbsp; recoverInsert(Page pg, byte[] raw, short offset)&amp;nbsp;&lt;br&gt;//将raw插入pg中的offset位置，不更新offset&lt;br&gt;&amp;nbsp; recoverUpdate(Page pg, byte[] raw, short offset)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" parent="aefCaqSCdMbnrOnTO0IQ-155" vertex="1">
           <mxGeometry x="15" y="75" width="550" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-167" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;strokeColor=default;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.573;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-137" target="aefCaqSCdMbnrOnTO0IQ-38">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-167" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;strokeColor=default;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.573;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="aefCaqSCdMbnrOnTO0IQ-137" target="aefCaqSCdMbnrOnTO0IQ-38" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-610" y="1183.18" as="sourcePoint" />
             <mxPoint x="-650" y="1303.18" as="targetPoint" />
@@ -434,7 +434,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-168" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;strokeColor=default;exitX=-0.001;exitY=0.52;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-137" target="aefCaqSCdMbnrOnTO0IQ-121">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-168" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#CC00CC;strokeColor=default;exitX=-0.001;exitY=0.52;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="aefCaqSCdMbnrOnTO0IQ-137" target="aefCaqSCdMbnrOnTO0IQ-121" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-760" y="1783.18" as="sourcePoint" />
             <mxPoint x="-710" y="1733.18" as="targetPoint" />
@@ -443,11 +443,77 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="aefCaqSCdMbnrOnTO0IQ-171" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#FFDD80;strokeColor=default;exitX=0.938;exitY=0.036;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="aefCaqSCdMbnrOnTO0IQ-48" target="aefCaqSCdMbnrOnTO0IQ-56">
+        <mxCell id="aefCaqSCdMbnrOnTO0IQ-171" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#FFDD80;strokeColor=default;exitX=0.938;exitY=0.036;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="aefCaqSCdMbnrOnTO0IQ-48" target="aefCaqSCdMbnrOnTO0IQ-56" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-1040" y="1303.18" as="sourcePoint" />
             <mxPoint x="-720" y="1300" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-1" value="&lt;font style=&quot;font-size: 16px&quot; face=&quot;Verdana&quot;&gt;&lt;b&gt;VM（Version Manager）&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-385" y="2580" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-17" value="Entry" style="swimlane;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-1390" y="2800" width="780" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-18" value="&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;记录操作类&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-17">
+          <mxGeometry x="120" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-56" value="&lt;div&gt;静态方法：&lt;/div&gt;&lt;div&gt;&amp;nbsp; public static Entry loadEntry(VersionManager vm, long uid) // 根据uid读取Entry&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-17">
+          <mxGeometry x="10" y="110" width="660" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-54" value="&lt;div&gt;&lt;font face=&quot;verdana&quot;&gt;&amp;nbsp; private long uid;&amp;nbsp; &amp;nbsp; &amp;nbsp;// 当前Entry所在页号和偏移&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;verdana&quot;&gt;&amp;nbsp; private DataItem dataItem;&amp;nbsp; &amp;nbsp;// Entry所对应dataItem&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;verdana&quot;&gt;&amp;nbsp; private VersionManager vm;&lt;/font&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fontSize=16;fontColor=#000000;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-17">
+          <mxGeometry x="10" y="30" width="470" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-21" value="DB文件（.db）" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-1280" y="2430" width="450" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-22" value="" style="shape=table;html=1;whiteSpace=wrap;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-21">
+          <mxGeometry x="17.5" y="60" width="402.5" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-23" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-22">
+          <mxGeometry width="402.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-24" value="&lt;div style=&quot;text-align: left ; font-size: 12px&quot;&gt;&lt;span&gt;第1页（校验页）&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; font-size: 12px&quot;&gt;&lt;span&gt;100~107：随机字节&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left ; font-size: 12px&quot;&gt;&lt;span&gt;108~115：拷贝字节&lt;/span&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-23">
+          <mxGeometry width="152" height="70" as="geometry">
+            <mxRectangle width="152" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-25" value="&lt;span style=&quot;font-size: 12px ; text-align: left&quot;&gt;第2页&lt;br&gt;（普通页）&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-23">
+          <mxGeometry x="152" width="170" height="70" as="geometry">
+            <mxRectangle width="170" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-26" value="&lt;span style=&quot;font-size: 12px ; text-align: left&quot;&gt;第3页&lt;br&gt;（普通页）&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-23">
+          <mxGeometry x="322" width="81" height="70" as="geometry">
+            <mxRectangle width="81" height="70" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-27" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-22">
+          <mxGeometry y="70" width="402.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-28" value="&lt;span style=&quot;font-size: 12px ; text-align: left&quot;&gt;第4页（普通页）&lt;/span&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;&lt;br&gt;2字节：空闲位置偏移&lt;br&gt;剩下的：实际存储数据&lt;br&gt;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;align=center;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-27">
+          <mxGeometry width="152" height="110" as="geometry">
+            <mxRectangle width="152" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-29" value="&lt;span style=&quot;font-size: 14px&quot;&gt;[FSO]&lt;br&gt;[ValidFlag] [DataSize] [&lt;/span&gt;&lt;span style=&quot;color: rgb(204 , 0 , 102) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: center&quot;&gt;[XMIN] [XMAX] [DATA]&lt;/span&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;]&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;[ValidFlag] [DataSize] [&lt;/span&gt;&lt;span style=&quot;color: rgb(204 , 0 , 102) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; text-align: center&quot;&gt;[XMIN] [XMAX] [DATA]&lt;/span&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;]&lt;/span&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;align=left;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-27">
+          <mxGeometry x="152" width="170" height="110" as="geometry">
+            <mxRectangle width="170" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-30" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;overflow=hidden;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-27">
+          <mxGeometry x="322" width="81" height="110" as="geometry">
+            <mxRectangle width="81" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-31" value="每个页的大小为8K" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-21">
+          <mxGeometry x="100" y="30" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-32" value="&lt;font style=&quot;font-size: 14px&quot;&gt;实际存储数据结构：若干DataItem&lt;br&gt;[ValidFlag] [DataSize] [&lt;font color=&quot;#cc0066&quot;&gt;Entry&lt;/font&gt;]&lt;br&gt;ValidFlag占1字节，DataSize占2字节&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-21">
+          <mxGeometry x="17.5" y="245" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="2nGLh2dqLrratXYfQVcy-20" value="&lt;font style=&quot;font-size: 12px&quot;&gt;&lt;b&gt;Entry结构&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#cc0066&quot;&gt;[XMIN] [XMAX] [DATA]&lt;/font&gt;&lt;br&gt;8字节-8字节-若干字节&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="2nGLh2dqLrratXYfQVcy-21">
+          <mxGeometry x="277.5" y="250" width="160" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
