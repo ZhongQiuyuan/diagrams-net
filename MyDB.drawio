@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-15T03:12:09.638Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="iGaYRS7yDFhDOi6Ai7ta" version="17.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-15T04:08:02.913Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="y8HGRWwoGMpIeNeyNgnc" version="17.4.3" type="github">
   <diagram id="cRY_7gkTVNxFrMp_fR6s" name="第 1 页">
-    <mxGraphModel dx="3903" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4154" dy="895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -582,15 +582,6 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Gz9gHNPtsVzG0F3YHhXJ-36" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#000000;exitX=0.418;exitY=-0.003;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.409;entryY=1.015;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="2nGLh2dqLrratXYfQVcy-17" target="2nGLh2dqLrratXYfQVcy-20" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-830" y="2930" as="sourcePoint" />
-            <mxPoint x="-780" y="2880" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="-1010" y="2750" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="Gz9gHNPtsVzG0F3YHhXJ-37" value="Visibility" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" parent="1" vertex="1">
           <mxGeometry x="90" y="3200" width="1479" height="680" as="geometry" />
         </mxCell>
@@ -661,11 +652,11 @@
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px&quot;&gt;IM（Index Manager）&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-600" y="4280" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="S7SyOjDBZ7DoBfZNaTdB-2" value="B+树" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="-1845" y="4350" width="50" height="20" as="geometry" />
+        <mxCell id="S7SyOjDBZ7DoBfZNaTdB-2" value="&lt;b&gt;B+树&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-1225" y="4780" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-8" value="RootNode" style="swimlane;fontSize=16;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="1" vertex="1">
-          <mxGeometry x="-1890" y="4380" width="180" height="180" as="geometry" />
+          <mxGeometry x="-1290" y="4820" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-10" value="keyNum = 2&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="S7SyOjDBZ7DoBfZNaTdB-8" vertex="1">
           <mxGeometry x="70" y="30" width="110" height="20" as="geometry" />
@@ -709,7 +700,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-26" value="Uid1 Node" style="swimlane;fontSize=16;fillColor=#b0e3e6;strokeColor=#0e8088;startSize=23;" parent="1" vertex="1">
-          <mxGeometry x="-2000" y="4590" width="180" height="180" as="geometry" />
+          <mxGeometry x="-1400" y="5030" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-27" value="keyNum = 3&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="S7SyOjDBZ7DoBfZNaTdB-26" vertex="1">
           <mxGeometry x="70" y="30" width="110" height="20" as="geometry" />
@@ -760,7 +751,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-37" value="Uid2 Node" style="swimlane;fontSize=16;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="1" vertex="1">
-          <mxGeometry x="-1770" y="4590" width="180" height="180" as="geometry" />
+          <mxGeometry x="-1170" y="5030" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-38" value="keyNum = 1&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="S7SyOjDBZ7DoBfZNaTdB-37" vertex="1">
           <mxGeometry x="70" y="30" width="110" height="20" as="geometry" />
@@ -804,7 +795,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-48" value="Uid3 Node" style="swimlane;fontSize=16;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="1" vertex="1">
-          <mxGeometry x="-2260" y="4830" width="180" height="180" as="geometry" />
+          <mxGeometry x="-1660" y="5270" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-49" value="keyNum = 3&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="S7SyOjDBZ7DoBfZNaTdB-48" vertex="1">
           <mxGeometry x="70" y="30" width="110" height="20" as="geometry" />
@@ -858,7 +849,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-59" value="Uid4 Node" style="swimlane;fontSize=16;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="1" vertex="1">
-          <mxGeometry x="-2040" y="4830" width="180" height="180" as="geometry" />
+          <mxGeometry x="-1440" y="5270" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-60" value="keyNum = 3&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="S7SyOjDBZ7DoBfZNaTdB-59" vertex="1">
           <mxGeometry x="70" y="30" width="110" height="20" as="geometry" />
@@ -912,7 +903,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-70" value="Uid5 Node" style="swimlane;fontSize=16;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="1" vertex="1">
-          <mxGeometry x="-1820" y="4830" width="180" height="180" as="geometry" />
+          <mxGeometry x="-1220" y="5270" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-71" value="keyNum = 3&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="S7SyOjDBZ7DoBfZNaTdB-70" vertex="1">
           <mxGeometry x="70" y="30" width="110" height="20" as="geometry" />
@@ -966,7 +957,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-81" value="Uid6 Node" style="swimlane;fontSize=16;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="1" vertex="1">
-          <mxGeometry x="-1600" y="4830" width="180" height="180" as="geometry" />
+          <mxGeometry x="-1000" y="5270" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-82" value="keyNum = 3&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="S7SyOjDBZ7DoBfZNaTdB-81" vertex="1">
           <mxGeometry x="70" y="30" width="110" height="20" as="geometry" />
@@ -1017,7 +1008,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-92" value="Uid7 Node" style="swimlane;fontSize=16;fillColor=#b0e3e6;strokeColor=#0e8088;startSize=23;" parent="1" vertex="1">
-          <mxGeometry x="-1370" y="4830" width="180" height="180" as="geometry" />
+          <mxGeometry x="-770" y="5270" width="180" height="180" as="geometry" />
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-93" value="keyNum = 1&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" parent="S7SyOjDBZ7DoBfZNaTdB-92" vertex="1">
           <mxGeometry x="70" y="30" width="110" height="20" as="geometry" />
@@ -1049,48 +1040,48 @@
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-155" value="" style="endArrow=classic;html=1;rounded=0;fontSize=16;exitX=0.275;exitY=1.025;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="S7SyOjDBZ7DoBfZNaTdB-18" target="S7SyOjDBZ7DoBfZNaTdB-26" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1700" y="4770" as="sourcePoint" />
-            <mxPoint x="-1650" y="4720" as="targetPoint" />
+            <mxPoint x="-1100" y="5210" as="sourcePoint" />
+            <mxPoint x="-1050" y="5160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-156" value="" style="endArrow=classic;html=1;rounded=0;fontSize=16;exitX=0.775;exitY=0.975;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="S7SyOjDBZ7DoBfZNaTdB-18" target="S7SyOjDBZ7DoBfZNaTdB-37" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1700" y="4770" as="sourcePoint" />
-            <mxPoint x="-1650" y="4720" as="targetPoint" />
+            <mxPoint x="-1100" y="5210" as="sourcePoint" />
+            <mxPoint x="-1050" y="5160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-157" value="" style="endArrow=classic;html=1;rounded=0;fontSize=16;exitX=0.183;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="S7SyOjDBZ7DoBfZNaTdB-34" target="S7SyOjDBZ7DoBfZNaTdB-48" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1700" y="4770" as="sourcePoint" />
-            <mxPoint x="-1650" y="4720" as="targetPoint" />
+            <mxPoint x="-1100" y="5210" as="sourcePoint" />
+            <mxPoint x="-1050" y="5160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-160" value="" style="endArrow=classic;html=1;rounded=0;fontSize=16;exitX=0.525;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="S7SyOjDBZ7DoBfZNaTdB-34" target="S7SyOjDBZ7DoBfZNaTdB-59" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1700" y="4770" as="sourcePoint" />
-            <mxPoint x="-1650" y="4720" as="targetPoint" />
+            <mxPoint x="-1100" y="5210" as="sourcePoint" />
+            <mxPoint x="-1050" y="5160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-161" value="" style="endArrow=classic;html=1;rounded=0;fontSize=16;exitX=0.817;exitY=1.025;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="S7SyOjDBZ7DoBfZNaTdB-34" target="S7SyOjDBZ7DoBfZNaTdB-70" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1700" y="4770" as="sourcePoint" />
-            <mxPoint x="-1650" y="4720" as="targetPoint" />
+            <mxPoint x="-1100" y="5210" as="sourcePoint" />
+            <mxPoint x="-1050" y="5160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-162" value="" style="endArrow=classic;html=1;rounded=0;fontSize=16;exitX=0.313;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="S7SyOjDBZ7DoBfZNaTdB-45" target="S7SyOjDBZ7DoBfZNaTdB-81" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1700" y="4770" as="sourcePoint" />
-            <mxPoint x="-1650" y="4720" as="targetPoint" />
+            <mxPoint x="-1100" y="5210" as="sourcePoint" />
+            <mxPoint x="-1050" y="5160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="S7SyOjDBZ7DoBfZNaTdB-163" value="" style="endArrow=classic;html=1;rounded=0;fontSize=16;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.8;exitY=1.1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="S7SyOjDBZ7DoBfZNaTdB-45" target="S7SyOjDBZ7DoBfZNaTdB-92" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-1700" y="4770" as="sourcePoint" />
-            <mxPoint x="-1650" y="4720" as="targetPoint" />
+            <mxPoint x="-1100" y="5210" as="sourcePoint" />
+            <mxPoint x="-1050" y="5160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ZJFXaFZsu-pGiFlaiO3p-1" value="DB文件（.db）" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
-          <mxGeometry x="-1505" y="4140" width="500" height="360" as="geometry" />
+          <mxGeometry x="-1530" y="4320" width="500" height="360" as="geometry" />
         </mxCell>
         <mxCell id="ZJFXaFZsu-pGiFlaiO3p-2" value="" style="shape=table;html=1;whiteSpace=wrap;startSize=0;container=1;collapsible=0;childLayout=tableLayout;fontFamily=Verdana;fontSize=16;fontColor=#000000;strokeWidth=2;" parent="ZJFXaFZsu-pGiFlaiO3p-1" vertex="1">
           <mxGeometry x="17.5" y="60" width="462.5" height="180" as="geometry" />
@@ -1140,26 +1131,68 @@
         <mxCell id="ZJFXaFZsu-pGiFlaiO3p-13" value="&lt;font&gt;&lt;b style=&quot;font-size: 12px&quot;&gt;Node结构&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;font color=&quot;#cc0066&quot;&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;[LeafFlag][KeyNumber][SiblingUid]&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#cc0066&quot;&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;[Son0][Key0][Son1][Key1]...[SonN][KeyN]&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;span style=&quot;font-size: 12px&quot;&gt;1字节-2字节-8字节&lt;br&gt;8字节-8字节...（共（32*2+2）个8-8字节）&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=16;" parent="ZJFXaFZsu-pGiFlaiO3p-1" vertex="1">
           <mxGeometry x="265" y="250" width="232.5" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="olaEbsDFajbCgUoB94yE-1" value="Node" style="swimlane;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="-1040" y="4940" width="1010" height="660" as="geometry" />
+        <mxCell id="olaEbsDFajbCgUoB94yE-1" value="Node" style="swimlane;fontSize=16;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-490" y="4780" width="1050" height="660" as="geometry" />
         </mxCell>
         <mxCell id="olaEbsDFajbCgUoB94yE-3" value="&lt;b&gt;节点操作类&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="olaEbsDFajbCgUoB94yE-1">
           <mxGeometry x="105.92000000000007" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="olaEbsDFajbCgUoB94yE-4" value="&lt;div&gt;BPlusTree tree;&amp;nbsp; &amp;nbsp; // 该节点所在索引树&amp;nbsp;&lt;/div&gt;&lt;div&gt;DataItem dataItem;&amp;nbsp; // 该节点所在的DataItem&lt;/div&gt;&lt;div&gt;SubArray raw;&amp;nbsp; // 该节点的Node结构数据&lt;/div&gt;&lt;div&gt;long uid;&amp;nbsp; // 该dataItem在db文件中的页号和偏移&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; ...&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="olaEbsDFajbCgUoB94yE-1">
-          <mxGeometry x="10" y="30" width="350" height="100" as="geometry" />
+        <mxCell id="olaEbsDFajbCgUoB94yE-4" value="&lt;div&gt;BPlusTree tree;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 该节点所在索引树&amp;nbsp;&lt;/div&gt;&lt;div&gt;DataItem dataItem;&amp;nbsp; &amp;nbsp;// 该节点所在的DataItem&lt;/div&gt;&lt;div&gt;SubArray raw;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 该节点的Node结构数据&lt;/div&gt;&lt;div&gt;long uid;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 该dataItem在db文件中的页号和偏移&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; ...&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-1">
+          <mxGeometry x="10" y="30" width="480" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="olaEbsDFajbCgUoB94yE-5" value="静态方法：&lt;br&gt;&amp;nbsp;&amp;nbsp;// 新建一个空的根节点&lt;br&gt;&amp;nbsp; static byte[] newNilRootRaw()&lt;br&gt;&amp;nbsp; // 新建一个根节点，该根节点只有两个子节点。用在根节点分裂时，产生新根，left，right为分裂的两个旧根。&lt;br&gt;&amp;nbsp; static byte[] newRootRaw(long left, long right, long key)&lt;br&gt;&amp;nbsp;&amp;nbsp;// 根据uid从bTree载入一个dataItem，并封装Node对象&lt;br&gt;&amp;nbsp; static Node loadNode(BPlusTree bTree, long uid)&amp;nbsp;&lt;br&gt;&amp;nbsp; // 把key/son往右移动一格。用于插入时，从kth个key/som开始整体往右移动一格。&lt;br&gt;&amp;nbsp; static void shiftRawKth(SubArray raw, int kth)&lt;br&gt;&amp;nbsp; // 从from复制到to，复制的内容从from的第k个key/son开始直到最后一个key/son。用在分裂时，复制一半去新节点。&lt;br&gt;&amp;nbsp; static void copyRawFromKth(SubArray from, SubArray to, int kth)&lt;br&gt;&amp;nbsp; 其他的get/set方法..." style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="olaEbsDFajbCgUoB94yE-1">
-          <mxGeometry x="10" y="146" width="840" height="230" as="geometry" />
+        <mxCell id="olaEbsDFajbCgUoB94yE-5" value="静态方法：&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 新建一个空的根节点&lt;br&gt;&amp;nbsp; static byte[] newNilRootRaw()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 新建一个根节点，该根节点只有两个子节点。用在根节点分裂时，产生新根，left，right为分裂的两个旧根。&lt;br&gt;&amp;nbsp; static byte[] newRootRaw(long left, long right, long key)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 根据uid从bTree载入一个dataItem，并封装Node对象&lt;br&gt;&amp;nbsp; static Node loadNode(BPlusTree bTree, long uid)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 把key/son往右移动一格。用于插入时，从kth个key/som开始整体往右移动一格。&lt;br&gt;&amp;nbsp; static void shiftRawKth(SubArray raw, int kth)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 从from复制到to，复制的内容从from的第k个key/son开始直到最后一个key/son。用在分裂时，复制一半去新节点。&lt;br&gt;&amp;nbsp; static void copyRawFromKth(SubArray from, SubArray to, int kth)&lt;br&gt;&amp;nbsp; 其他的get/set方法..." style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-1">
+          <mxGeometry x="10" y="146" width="920" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="olaEbsDFajbCgUoB94yE-6" value="普通方法：&lt;br&gt;&amp;nbsp; // 在当前节点的key/son中找到满足key的son，没有则返回兄弟节点的uid&lt;br&gt;&amp;nbsp; public SearchNextRes searchNext(long key)&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp;&amp;nbsp;// 在当前节点进行范围查找，范围是[leftKey, rightKey]，返回满足要求的son们的uid。若兄弟节点中也有，也返回兄弟节点uid。&lt;br&gt;&amp;nbsp; public LeafSearchRangeRes leafSearchRange(long leftKey, long rightKey)&lt;br&gt;&amp;nbsp;&amp;nbsp;// 插入一个son到本节点中，并根据情况进行分裂。若插入失败返回兄弟节点uid，若插入成功并需要分裂，则返回分裂出来的新key和son。&lt;br&gt;&amp;nbsp; public InsertAndSplitRes insertAndSplit(long uid, long key)&amp;nbsp; // 该方法用到了以下三个方法：&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // 插入一个son到本节点中&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; private boolean insert(long uid, long key)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // 判断是否达到容量极限，达到则需要分裂&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; private boolean needSplit()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // 分裂当前节点，返回新key/son。把原来的一半key/son复制到新节点中，并把分裂出来的新node调用dm插入到文件中。&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; private SplitRes split()" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="olaEbsDFajbCgUoB94yE-1">
-          <mxGeometry x="10" y="390" width="1000" height="250" as="geometry" />
+        <mxCell id="olaEbsDFajbCgUoB94yE-6" value="普通方法：&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // 在当前节点的key/son中找到满足key的son，没有则返回兄弟节点的uid&lt;br&gt;&amp;nbsp; public SearchNextRes searchNext(long key)&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // 在当前页节点进行范围查找，范围是[leftKey, rightKey]，返回满足要求的son们的uid。若兄弟节点中也有，也返回兄弟节点uid。&lt;br&gt;&amp;nbsp; public LeafSearchRangeRes leafSearchRange(long leftKey, long rightKey)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // 插入一个son到本节点中，并根据情况进行分裂。若插入失败返回兄弟节点uid，若插入成功并需要分裂，则返回分裂出来的新key和son。&lt;br&gt;&amp;nbsp; public InsertAndSplitRes insertAndSplit(long uid, long key)&amp;nbsp; // 该方法用到了以下三个方法：&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 插入一个son到本节点中&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; private boolean insert(long uid, long key)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 判断是否达到容量极限，达到则需要分裂&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; private boolean needSplit()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 分裂当前节点，返回新key/son。把原来的一半key/son复制到新节点中，并把分裂出来的新node调用dm插入到文件中。&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; private SplitRes split()" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-1">
+          <mxGeometry x="10" y="390" width="1040" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="olaEbsDFajbCgUoB94yE-7" value="BPlusTree" style="swimlane;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="-920" y="4310" width="920" height="590" as="geometry" />
+        <mxCell id="olaEbsDFajbCgUoB94yE-7" value="BPlusTree" style="swimlane;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-920" y="4310" width="1040" height="400" as="geometry" />
         </mxCell>
         <mxCell id="olaEbsDFajbCgUoB94yE-8" value="&lt;b&gt;B+树 索引&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="olaEbsDFajbCgUoB94yE-7">
           <mxGeometry x="161.5" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-9" value="&lt;div&gt;DataManager dm;&amp;nbsp; &amp;nbsp;// 存储索引的文件对应的dataManager&lt;/div&gt;&lt;div&gt;long bootUid;&amp;nbsp; &amp;nbsp;// 存储了rootUid这个值的DataItem的 UID&lt;/div&gt;&lt;div&gt;DataItem bootDataItem;&amp;nbsp; // 存储rootUid的dataItem&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-7">
+          <mxGeometry x="20" y="30" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-10" value="静态方法：&lt;br&gt;&lt;div&gt;&amp;nbsp; public static long create(DataManager dm)&amp;nbsp; &amp;nbsp;&amp;nbsp;// 创建一个空的根节点，返回bootUid&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; public static BPlusTree load(long bootUid, DataManager dm)&amp;nbsp; &amp;nbsp;// 载入B+树，即找到根&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; public List&amp;lt;Long&amp;gt; &lt;font color=&quot;#cc0000&quot;&gt;search(long key)&amp;nbsp;&amp;nbsp;&lt;/font&gt;&lt;font color=&quot;#cc0000&quot;&gt;// 单点查找&lt;/font&gt;，返回符合要求的数据项的uid（叶节点中符合key的son）&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; public List&amp;lt;Long&amp;gt; &lt;font color=&quot;#cc0000&quot;&gt;searchRange(long leftKey, long rightKey)&amp;nbsp; &amp;nbsp;// 范围查找&lt;/font&gt;，返回符合要求的数据项的uids&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; public void &lt;font color=&quot;#cc0000&quot;&gt;insert(long key, long uid)&amp;nbsp;&amp;nbsp;// 插入数据到叶节点中对应的位置，并更新索引树目录项&lt;/font&gt;、分裂等&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 用到了以下方法：&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 从nodeUid这个节点开始寻找位置进行插入&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 如果是叶节点，执行&lt;span&gt;insertAndSplit真正插入，如果不是叶节点，递归往下找并递归该方法。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 如果在子节点执行插入后发现有分裂的新son/key，将新son/key插入当前节点。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; private InsertRes insert(long nodeUid, long uid, long key)&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 调用node.insertAndSplit()真正进行插入，并返回可能的分裂新key/son&lt;/div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; private InsertRes insertAndSplit(long nodeUid, long uid, long key)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-7">
+          <mxGeometry x="20" y="100" width="830" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-12" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=16;fontColor=#CC0000;exitX=0.003;exitY=0.26;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="olaEbsDFajbCgUoB94yE-9" target="ZJFXaFZsu-pGiFlaiO3p-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1010" y="4710" as="sourcePoint" />
+            <mxPoint x="-1500" y="4890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-980" y="4390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-13" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=16;fontColor=#CC0000;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=-0.002;entryY=0.028;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="S7SyOjDBZ7DoBfZNaTdB-8" target="olaEbsDFajbCgUoB94yE-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1010" y="4940" as="sourcePoint" />
+            <mxPoint x="-960" y="4890" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-820" y="4740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-15" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=16;fontColor=#CC0000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ZJFXaFZsu-pGiFlaiO3p-13" target="S7SyOjDBZ7DoBfZNaTdB-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1110" y="4590" as="sourcePoint" />
+            <mxPoint x="-1060" y="4540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1290" y="4780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-16" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=16;fontColor=#CC0000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2nGLh2dqLrratXYfQVcy-20" target="2nGLh2dqLrratXYfQVcy-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-680" y="2820" as="sourcePoint" />
+            <mxPoint x="-630" y="2770" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-970" y="2760" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
