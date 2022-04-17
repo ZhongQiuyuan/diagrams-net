@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-16T13:28:04.702Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="KogPgjxz8eoV1VsOnpVe" version="17.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-17T04:08:16.577Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="8ScNqKUJ2gztjTc10Kt7" version="17.4.3" type="github">
   <diagram id="cRY_7gkTVNxFrMp_fR6s" name="第 1 页">
-    <mxGraphModel dx="6124" dy="1763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3938" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1479,6 +1479,33 @@
               <mxPoint y="5730" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-101" value="&lt;b&gt;Launcher&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-880" y="6960" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-106" value="Server" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1383.75" y="7065" width="205" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-111" value="Executor" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="olaEbsDFajbCgUoB94yE-106">
+          <mxGeometry x="5" y="60" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-107" value="ServerLauncher" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1060" y="7040" width="380" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-108" value="ClientLuncher" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-558.75" y="7040" width="418.75" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-109" value="Client" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="7260" width="300" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-112" value="RoundTripper" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="olaEbsDFajbCgUoB94yE-109">
+          <mxGeometry x="50" y="40" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-110" value="Shell" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="7014" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-113" value="Packager" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-910" y="7510" width="200" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
