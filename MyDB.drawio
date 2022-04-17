@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-17T04:08:16.577Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="8ScNqKUJ2gztjTc10Kt7" version="17.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-17T09:03:17.569Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="YNxBkbfDNnjnALOX56e2" version="17.4.3" type="github">
   <diagram id="cRY_7gkTVNxFrMp_fR6s" name="第 1 页">
     <mxGraphModel dx="3938" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1483,29 +1483,173 @@
         <mxCell id="olaEbsDFajbCgUoB94yE-101" value="&lt;b&gt;Launcher&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="-880" y="6960" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="olaEbsDFajbCgUoB94yE-106" value="Server" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1383.75" y="7065" width="205" height="260" as="geometry" />
+        <mxCell id="olaEbsDFajbCgUoB94yE-106" value="Server" style="swimlane;fontFamily=Verdana;fontSize=16;fillColor=#e1d5e7;html=1;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-1970" y="7014" width="700" height="486" as="geometry" />
         </mxCell>
         <mxCell id="olaEbsDFajbCgUoB94yE-111" value="Executor" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="olaEbsDFajbCgUoB94yE-106">
-          <mxGeometry x="5" y="60" width="200" height="200" as="geometry" />
+          <mxGeometry x="25" y="326" width="647.5" height="144" as="geometry" />
         </mxCell>
-        <mxCell id="olaEbsDFajbCgUoB94yE-107" value="ServerLauncher" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-1060" y="7040" width="380" height="310" as="geometry" />
+        <mxCell id="olaEbsDFajbCgUoB94yE-123" value="&lt;div&gt;private long xid;&lt;/div&gt;&lt;div&gt;TableManager tbm;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-111">
+          <mxGeometry x="7.5" y="30" width="170" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="olaEbsDFajbCgUoB94yE-108" value="ClientLuncher" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-558.75" y="7040" width="418.75" height="310" as="geometry" />
+        <mxCell id="olaEbsDFajbCgUoB94yE-124" value="public byte[] execute(byte[] sql)&amp;nbsp; &amp;nbsp;// 根据byte[]调用Parser解析sql语句，执行sql&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 如果没有开启事务，则会自动开启一个事务&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 并在执行完后自动提交或撤销" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-111">
+          <mxGeometry x="7.5" y="80" width="640" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="olaEbsDFajbCgUoB94yE-109" value="Client" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-40" y="7260" width="300" height="200" as="geometry" />
+        <mxCell id="olaEbsDFajbCgUoB94yE-117" value="&lt;div&gt;private int port;&lt;/div&gt;&lt;div&gt;TableManager tbm;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-106">
+          <mxGeometry x="10" y="30" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-118" value="public void start()&amp;nbsp; // 新建ServerSocket监听&lt;font color=&quot;#cc0066&quot;&gt;接收socket，一个客户端连接就是一个socket&lt;/font&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 对每个请求新建一个HandleSocket线程&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 执行该线程" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-106">
+          <mxGeometry x="10" y="70" width="690" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-119" value="HandleSocket implements Runnable&amp;nbsp;" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="olaEbsDFajbCgUoB94yE-106">
+          <mxGeometry x="27.5" y="160" width="645" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-121" value="&lt;div&gt;private Socket socket;&lt;/div&gt;&lt;div&gt;private TableManager tbm;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-119">
+          <mxGeometry x="5" y="55" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-122" value="public void run() // 构建packager，根据packager接收sql，调用Executor执行sql，&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 并向客户端发送执行结果" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-119">
+          <mxGeometry x="5" y="100" width="640" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-133" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#0000CC;exitX=0.46;exitY=1.05;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="olaEbsDFajbCgUoB94yE-106" source="olaEbsDFajbCgUoB94yE-118" target="olaEbsDFajbCgUoB94yE-119">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="386" as="sourcePoint" />
+            <mxPoint x="480" y="336" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="133" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-137" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#000000;exitX=0.824;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="olaEbsDFajbCgUoB94yE-106" source="olaEbsDFajbCgUoB94yE-122" target="olaEbsDFajbCgUoB94yE-111">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="376" as="sourcePoint" />
+            <mxPoint x="610" y="326" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="306" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-138" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#000000;exitX=0;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.013;entryY=0.85;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="olaEbsDFajbCgUoB94yE-106" source="olaEbsDFajbCgUoB94yE-117" target="olaEbsDFajbCgUoB94yE-121">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="376" as="sourcePoint" />
+            <mxPoint x="610" y="326" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-10" y="186" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-139" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#000000;exitX=-0.004;exitY=1.025;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.01;entryY=0.875;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="olaEbsDFajbCgUoB94yE-106" source="olaEbsDFajbCgUoB94yE-121" target="olaEbsDFajbCgUoB94yE-123">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="376" as="sourcePoint" />
+            <mxPoint x="10" y="386" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-10" y="346" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-107" value="ServerLauncher" style="swimlane;fontFamily=Verdana;fontSize=16;fillColor=#dae8fc;html=1;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-1250" y="7025" width="700" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-114" value="&lt;div&gt;public static final int port = 9999;&amp;nbsp; // 服务端端口号&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;public static final long DEFALUT_MEM = (1&amp;lt;&amp;lt;20)*64;&amp;nbsp; // 默认db文件大小64M&amp;nbsp;&lt;/div&gt;&lt;div&gt;public static final long KB = 1 &amp;lt;&amp;lt; 10;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;public static final long MB = 1 &amp;lt;&amp;lt; 20;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;public static final long GB = 1 &amp;lt;&amp;lt; 30;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-107">
+          <mxGeometry x="10" y="45" width="640" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-115" value="主方法：&lt;br&gt;&amp;nbsp; public static void main(String[] args)&amp;nbsp; &amp;nbsp;// 根据命令行参数创建或打开数据库&amp;nbsp;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-107">
+          <mxGeometry x="10" y="185" width="610" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-116" value="私有方法：&lt;br&gt;&amp;nbsp; private static void openDB(String path, long mem)&amp;nbsp;&amp;nbsp;// 打开已有数据库，并启动server" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-107">
+          <mxGeometry x="10" y="245" width="690" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-108" value="ClientLauncher" style="swimlane;fontFamily=Verdana;fontSize=16;fillColor=#dae8fc;html=1;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-525.75" y="7025" width="655.75" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-149" value="public static void main(String[] args)&amp;nbsp; // 客户端启动入口&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 新建一个socket，连接到服务端&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 新建一个Packager&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 新建Client,Shell,执行Shell.run()" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-108">
+          <mxGeometry x="15.75" y="39" width="590" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-110" value="Shell" style="swimlane;fontFamily=Verdana;fontSize=16;fillColor=#e1d5e7;html=1;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-525.75" y="7230" width="720" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-142" value="private Client client;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-110">
+          <mxGeometry x="10" y="34" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-143" value="public void run()&amp;nbsp; // 一行一行读取用户输入，调用client执行一次发送/一次接收，打印接收结果" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-110">
+          <mxGeometry x="10" y="80" width="710" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-109" value="Client" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="olaEbsDFajbCgUoB94yE-110">
+          <mxGeometry x="10" y="130" width="647" height="250" as="geometry" />
         </mxCell>
         <mxCell id="olaEbsDFajbCgUoB94yE-112" value="RoundTripper" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="olaEbsDFajbCgUoB94yE-109">
-          <mxGeometry x="50" y="40" width="200" height="110" as="geometry" />
+          <mxGeometry x="7" y="125" width="583" height="105" as="geometry" />
         </mxCell>
-        <mxCell id="olaEbsDFajbCgUoB94yE-110" value="Shell" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-50" y="7014" width="200" height="200" as="geometry" />
+        <mxCell id="olaEbsDFajbCgUoB94yE-146" value="private Packager packager;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-112">
+          <mxGeometry x="8" y="39" width="240" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="olaEbsDFajbCgUoB94yE-113" value="Packager" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-910" y="7510" width="200" height="200" as="geometry" />
+        <mxCell id="olaEbsDFajbCgUoB94yE-147" value="public Package roundTrip(Package pkg)&amp;nbsp; // 调用Packager执行一次发/收" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-112">
+          <mxGeometry y="75" width="570" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-144" value="private RoundTripper rt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-109">
+          <mxGeometry x="7" y="34" width="210" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-145" value="public byte[] execute(byte[] stat)&amp;nbsp; // 包装数据为Package，并调用rt执行一次发/收" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-109">
+          <mxGeometry x="7" y="80" width="640" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-113" value="Packager" style="swimlane;fontFamily=Verdana;fontSize=16;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1370" y="7620" width="720" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-126" value="&lt;div&gt;private Transporter transporter;&amp;nbsp; // 读写socket流数据的&lt;/div&gt;&lt;div&gt;private Encoder encoder;&amp;nbsp; &amp;nbsp;// 编解码package的&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-113">
+          <mxGeometry x="7.5" y="40" width="450" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-127" value="&lt;font color=&quot;#0000cc&quot;&gt;public void send(Package pkg)&amp;nbsp; // 编码并写入到socket输出流&lt;br&gt;public Package receive()&amp;nbsp; &amp;nbsp;// 接收socket输入流并解码&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-113">
+          <mxGeometry x="7.5" y="100" width="490" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-128" value="Package" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="olaEbsDFajbCgUoB94yE-113">
+          <mxGeometry x="497.5" y="30" width="197.5" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-129" value="&lt;div&gt;// 传输的最基本结构&lt;/div&gt;&lt;div&gt;public class Package {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; byte[] data;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Exception err;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-128">
+          <mxGeometry x="3" y="30" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-130" value="Transporter" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#000000;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="olaEbsDFajbCgUoB94yE-113">
+          <mxGeometry x="270" y="160" width="437.5" height="179" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-131" value="&lt;div&gt;&amp;nbsp; &amp;nbsp; private Socket socket;&amp;nbsp; &amp;nbsp;// 用于连接到服务器的socket&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private BufferedReader reader;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private BufferedWriter writer;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-130">
+          <mxGeometry x="-12.5" y="30" width="450" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-132" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;public void send(byte[] data)&amp;nbsp; // 写入到socket输出流&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;public byte[] receive()&amp;nbsp; &amp;nbsp;// 从socket输入流读取&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-130">
+          <mxGeometry x="3.75" y="120" width="430" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-134" value="&lt;font color=&quot;#000000&quot;&gt;Encoder&lt;/font&gt;" style="swimlane;fontFamily=Verdana;fontSize=16;fontColor=#CC0066;fillColor=none;gradientColor=none;html=1;" vertex="1" parent="olaEbsDFajbCgUoB94yE-113">
+          <mxGeometry x="7.5" y="160" width="252.5" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-135" value="&lt;font color=&quot;#000000&quot;&gt;byte[] encode(Package pkg)&lt;br&gt;Package decode(byte[] data)&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#CC0066;" vertex="1" parent="olaEbsDFajbCgUoB94yE-134">
+          <mxGeometry x="2.5" y="30" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-141" value="&lt;b&gt;收发数据流&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="olaEbsDFajbCgUoB94yE-113">
+          <mxGeometry x="202.5" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-125" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#000000;exitX=0;exitY=0.85;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="olaEbsDFajbCgUoB94yE-116" target="olaEbsDFajbCgUoB94yE-106">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1260" y="7260" as="sourcePoint" />
+            <mxPoint x="-1210" y="7210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1270" y="7257" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-140" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#000000;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.364;exitY=0.975;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="olaEbsDFajbCgUoB94yE-122" target="olaEbsDFajbCgUoB94yE-113">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1430" y="7490" as="sourcePoint" />
+            <mxPoint x="-1380" y="7440" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1510" y="7540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="olaEbsDFajbCgUoB94yE-148" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontFamily=Verdana;fontSize=16;fontColor=#000000;exitX=-0.012;exitY=0.7;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="olaEbsDFajbCgUoB94yE-146" target="olaEbsDFajbCgUoB94yE-113">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-180" y="7280" as="sourcePoint" />
+            <mxPoint x="-130" y="7230" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-580" y="7570" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
