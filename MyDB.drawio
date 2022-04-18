@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-18T04:11:34.139Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="Mju1hJF-Wr9ozoID-Phf" version="17.4.5" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-04-18T09:14:16.350Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="ziC4zuV3HUBFXKOu97gY" version="17.4.5" type="github" pages="2">
   <diagram id="cRY_7gkTVNxFrMp_fR6s" name="模块细节图">
-    <mxGraphModel dx="4143" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3903" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1664,12 +1664,12 @@
     </mxGraphModel>
   </diagram>
   <diagram id="qvjSwovwzzboPLKlbKWN" name="模块依赖图">
-    <mxGraphModel dx="3201" dy="1087" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3151" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="DpYqNXpCYK96TWVgqwpk-1" value="TM（TansactionManagerImpl）" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-750" y="770" width="590" height="340" as="geometry" />
+          <mxGeometry x="-790" y="1670" width="590" height="340" as="geometry" />
         </mxCell>
         <mxCell id="DpYqNXpCYK96TWVgqwpk-2" value="接口方法：&lt;br&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; long &lt;font color=&quot;#cc0066&quot;&gt;begin()&lt;/font&gt;;&amp;nbsp; // 开启一个事务，更新文件头和事务状态，返回事务id&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void &lt;font color=&quot;#cc0066&quot;&gt;commit(long xid)&lt;/font&gt;;&amp;nbsp; // 提交事务，更新文件中事务状态&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void &lt;font color=&quot;#cc0066&quot;&gt;abort(long xid)&lt;/font&gt;;&amp;nbsp; // 撤销事务，更新文件中事务状态&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; boolean &lt;font color=&quot;#cc0066&quot;&gt;isActive(long xid)&lt;/font&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; boolean &lt;font color=&quot;#cc0066&quot;&gt;isCommitted(long xid)&lt;/font&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; boolean &lt;font color=&quot;#cc0066&quot;&gt;isAborted(long xid)&lt;/font&gt;;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; void &lt;font color=&quot;#cc0066&quot;&gt;close()&lt;/font&gt;; // 关闭文件流&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; private void checkXIDCounter() // 检查文件是否合法&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="DpYqNXpCYK96TWVgqwpk-1">
           <mxGeometry x="10" y="20" width="540" height="200" as="geometry" />
@@ -1678,7 +1678,7 @@
           <mxGeometry x="10" y="230" width="580" height="100" as="geometry" />
         </mxCell>
         <mxCell id="maq0z_wxzJ45hIfA5iVd-2" value="DM（DataManagerImpl extends AbstractCache&lt;DataItem&gt;）" style="swimlane;fontFamily=Verdana;fontSize=16;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="260" y="710" width="1050" height="460" as="geometry" />
+          <mxGeometry x="160" y="1610" width="1050" height="460" as="geometry" />
         </mxCell>
         <mxCell id="maq0z_wxzJ45hIfA5iVd-3" value="抽象类方法实现：&lt;br&gt;&amp;nbsp; protected DataItem getForCache(long uid)&amp;nbsp; //&amp;nbsp;从 uid 中解析出页号，从 pageCache 中获取到页面，再根据偏移，解析出DataItem&lt;br&gt;&amp;nbsp;&amp;nbsp;protected void releaseForCache(DataItem di)&amp;nbsp; //&amp;nbsp;将 DataItem 写回数据源，将 DataItem 所在的页 release 即可" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="maq0z_wxzJ45hIfA5iVd-2">
           <mxGeometry x="30" y="36.82" width="1010" height="60" as="geometry" />
@@ -1691,24 +1691,24 @@
         </mxCell>
         <mxCell id="maq0z_wxzJ45hIfA5iVd-8" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontColor=#CC0066;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;exitX=-0.002;exitY=0.508;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="maq0z_wxzJ45hIfA5iVd-9" target="DpYqNXpCYK96TWVgqwpk-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-70" y="940" as="sourcePoint" />
-            <mxPoint x="440" y="810" as="targetPoint" />
+            <mxPoint x="-170" y="1840" as="sourcePoint" />
+            <mxPoint x="340" y="1710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="maq0z_wxzJ45hIfA5iVd-9" value="&lt;span style=&quot;font-size: 16px&quot;&gt;recover时用到TM&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#CC0066;" vertex="1" parent="1">
-          <mxGeometry x="-60" y="930" width="140" height="20" as="geometry" />
+          <mxGeometry x="-90" y="1830" width="140" height="20" as="geometry" />
         </mxCell>
         <mxCell id="maq0z_wxzJ45hIfA5iVd-10" value="" style="shape=flexArrow;endArrow=none;html=1;rounded=0;fontColor=#CC0066;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="maq0z_wxzJ45hIfA5iVd-2" target="maq0z_wxzJ45hIfA5iVd-9">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="265" y="556.8199999999999" as="sourcePoint" />
-            <mxPoint x="-20" y="939" as="targetPoint" />
+            <mxPoint x="165" y="1456.82" as="sourcePoint" />
+            <mxPoint x="-120" y="1839" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_PRSQd1lVtF83WSqiRkg-1" value="VersionManagerImpl extends&amp;nbsp;AbstractCache&amp;lt;Entry&amp;gt;" style="swimlane;fontFamily=Verdana;fontSize=16;fillColor=#dae8fc;html=1;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="-750" y="120" width="1190" height="500" as="geometry" />
+        <mxCell id="_PRSQd1lVtF83WSqiRkg-1" value="VM（VersionManagerImpl extends&amp;nbsp;AbstractCache&amp;lt;Entry&amp;gt;）" style="swimlane;fontFamily=Verdana;fontSize=16;fillColor=#dae8fc;html=1;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-1090" y="1020" width="1190" height="500" as="geometry" />
         </mxCell>
-        <mxCell id="_PRSQd1lVtF83WSqiRkg-2" value="接口方法：&lt;br&gt;&lt;div&gt;&amp;nbsp; byte[] read(long xid, long uid) throws Exception;&amp;nbsp; // 读取Entry（调用父类get()方法）判断可见性并拷贝返回其中的data部分&lt;/div&gt;&lt;div&gt;&amp;nbsp; long insert(long xid, byte[] data) throws Exception;&amp;nbsp; // 包装成Entry结构并调用DataManager插入&lt;/div&gt;&lt;div&gt;&amp;nbsp; boolean delete(long xid, long uid) throws Exception;&amp;nbsp; // 读取Entry并判断可见性，等待获取uid资源（lockTable图），判断版本跳跃，设置xmax&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; long begin(int level);&amp;nbsp; &amp;nbsp; &amp;nbsp;// 开启一个事务，需要调用TransactionManager.begin()获得事务id。并新建Transaction对象.&lt;/div&gt;&lt;div&gt;&amp;nbsp; void commit(long xid) throws Exception;&amp;nbsp; // 提交一个事务，从activeTransaction去除，调用lt.remove()释放所有资源。调用tm修改事务状态落盘&lt;/div&gt;&lt;div&gt;&amp;nbsp; void abort(long xid);&amp;nbsp; &amp;nbsp; &amp;nbsp;// 手动撤销事务，从activeTransaction中去除，调用lt.remove()释放所有资源。调用tm修改事务状态落盘&lt;span&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="_PRSQd1lVtF83WSqiRkg-1">
-          <mxGeometry x="20" y="180" width="1120" height="160" as="geometry" />
+        <mxCell id="_PRSQd1lVtF83WSqiRkg-2" value="接口方法：&lt;br&gt;&lt;div&gt;&amp;nbsp; byte[] &lt;font color=&quot;#cc0066&quot;&gt;read(long xid, long uid)&lt;/font&gt; throws Exception;&amp;nbsp; // 读取Entry（调用父类get()方法）判断可见性并拷贝返回其中的data部分&lt;/div&gt;&lt;div&gt;&amp;nbsp; long &lt;font color=&quot;#cc0066&quot;&gt;insert(long xid, byte[] data)&lt;/font&gt; throws Exception;&amp;nbsp; // 包装成Entry结构并调用DataManager插入&lt;/div&gt;&lt;div&gt;&amp;nbsp; boolean &lt;font color=&quot;#cc0066&quot;&gt;delete(long xid, long uid)&lt;/font&gt; throws Exception;&amp;nbsp; // 读取Entry并判断可见性，等待获取uid资源（lockTable图），判断版本跳跃，设置xmax&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; long &lt;font color=&quot;#cc0066&quot;&gt;begin(int level);&lt;/font&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;// 开启一个事务，需要调用TransactionManager.begin()获得事务id。并新建Transaction对象.&lt;/div&gt;&lt;div&gt;&amp;nbsp; void &lt;font color=&quot;#cc0066&quot;&gt;commit(long xid)&lt;/font&gt; throws Exception;&amp;nbsp; // 提交一个事务，从activeTransaction去除，调用lt.remove()释放所有资源。调用tm修改事务状态落盘&lt;/div&gt;&lt;div&gt;&amp;nbsp; void &lt;font color=&quot;#cc0066&quot;&gt;abort(long xid);&lt;/font&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;// 手动撤销事务，从activeTransaction中去除，调用lt.remove()释放所有资源。调用tm修改事务状态落盘&lt;span&gt;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="_PRSQd1lVtF83WSqiRkg-1">
+          <mxGeometry x="20" y="160" width="1120" height="160" as="geometry" />
         </mxCell>
         <mxCell id="_PRSQd1lVtF83WSqiRkg-3" value="&lt;div&gt;TransactionManager tm;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;DataManager dm;&lt;/div&gt;&lt;div&gt;Map&amp;lt;Long, Transaction&amp;gt; activeTransaction;&amp;nbsp; //当前活跃的事务&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Lock lock;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;LockTable lt;&amp;nbsp; // 事务持有/等待资源图&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="_PRSQd1lVtF83WSqiRkg-1">
           <mxGeometry x="20" y="40" width="510" height="100" as="geometry" />
@@ -1718,6 +1718,109 @@
         </mxCell>
         <mxCell id="_PRSQd1lVtF83WSqiRkg-5" value="&lt;div&gt;普通方法：&lt;/div&gt;&lt;div&gt;&amp;nbsp; private void internAbort(long xid, boolean autoAborted)&amp;nbsp; &amp;nbsp;// 撤销事务的内部操作，包括手动回滚和自动回滚。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// 比如删除/更新时发现死锁、版本跳跃，捕获到错误，调用该方法进行自动回滚。并抛出异常。&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="_PRSQd1lVtF83WSqiRkg-1">
           <mxGeometry x="20" y="350" width="1170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_PRSQd1lVtF83WSqiRkg-9" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=16;fontColor=#CC0066;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="_PRSQd1lVtF83WSqiRkg-10" target="DpYqNXpCYK96TWVgqwpk-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-580" y="1630" as="sourcePoint" />
+            <mxPoint x="-420" y="1630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_PRSQd1lVtF83WSqiRkg-11" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=16;fontColor=#CC0066;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="_PRSQd1lVtF83WSqiRkg-13" target="maq0z_wxzJ45hIfA5iVd-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="1260" as="sourcePoint" />
+            <mxPoint x="800" y="1320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="685" y="1270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_PRSQd1lVtF83WSqiRkg-10" value="begin\commit\abort" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#CC0066;" vertex="1" parent="1">
+          <mxGeometry x="-570" y="1570" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_PRSQd1lVtF83WSqiRkg-12" value="" style="shape=flexArrow;endArrow=none;html=1;rounded=0;fontSize=16;fontColor=#CC0066;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_PRSQd1lVtF83WSqiRkg-1" target="_PRSQd1lVtF83WSqiRkg-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-495" y="1520" as="sourcePoint" />
+            <mxPoint x="-495" y="1670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_PRSQd1lVtF83WSqiRkg-13" value="&lt;font style=&quot;font-size: 16px&quot;&gt;read/insert/delete&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#CC0066;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1260" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_PRSQd1lVtF83WSqiRkg-14" value="" style="shape=flexArrow;endArrow=none;html=1;rounded=0;fontSize=16;fontColor=#CC0066;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_PRSQd1lVtF83WSqiRkg-1" target="_PRSQd1lVtF83WSqiRkg-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="100" y="1270" as="sourcePoint" />
+            <mxPoint x="685" y="1610" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qv1PfZhyIITmkcm3oRY1-1" value="IM（BPlusTree）" style="swimlane;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="165" y="460" width="1040" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Qv1PfZhyIITmkcm3oRY1-2" value="&lt;b&gt;B+树 索引&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="Qv1PfZhyIITmkcm3oRY1-1">
+          <mxGeometry x="161.5" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Qv1PfZhyIITmkcm3oRY1-3" value="&lt;div&gt;DataManager dm;&amp;nbsp; &amp;nbsp;// 存储索引的文件对应的dataManager&lt;/div&gt;&lt;div&gt;long bootUid;&amp;nbsp; &amp;nbsp;// 存储了rootUid这个值的DataItem的 UID&lt;/div&gt;&lt;div&gt;DataItem bootDataItem;&amp;nbsp; // 存储rootUid的dataItem&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="Qv1PfZhyIITmkcm3oRY1-1">
+          <mxGeometry x="20" y="30" width="460" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qv1PfZhyIITmkcm3oRY1-4" value="静态方法：&lt;br&gt;&lt;div&gt;&amp;nbsp; public static long &lt;font color=&quot;#cc0066&quot;&gt;create(DataManager dm)&amp;nbsp;&lt;/font&gt; &amp;nbsp;&amp;nbsp;// 创建一个空的根节点，返回bootUid&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; public static BPlusTree &lt;font color=&quot;#cc0066&quot;&gt;load(long bootUid, DataManager dm)&amp;nbsp;&lt;/font&gt; &amp;nbsp;// 载入B+树，即找到根&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; public List&amp;lt;Long&amp;gt; &lt;font color=&quot;#cc0066&quot;&gt;search(long key)&amp;nbsp;&lt;/font&gt;&amp;nbsp;// 单点查找，返回符合要求的数据项的uid（叶节点中符合key的son）&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; public List&amp;lt;Long&amp;gt; &lt;font color=&quot;#cc0066&quot;&gt;searchRange(long leftKey, long rightKey)&amp;nbsp;&lt;/font&gt; &amp;nbsp;// 范围查找，返回符合要求的数据项的uids&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; public void &lt;font color=&quot;#cc0066&quot;&gt;insert(long key, long uid)&lt;/font&gt;&amp;nbsp;&amp;nbsp;// 插入数据到叶节点中对应的位置，并更新索引树目录项、分裂等&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; 用到了以下方法：&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 从nodeUid这个节点开始寻找位置进行插入&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 如果是叶节点，执行&lt;span&gt;insertAndSplit真正插入，如果不是叶节点，递归往下找并递归该方法。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 如果在子节点执行插入后发现有分裂的新son/key，将新son/key插入当前节点。&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; private InsertRes insert(long nodeUid, long uid, long key)&amp;nbsp;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // 调用node.insertAndSplit()真正进行插入，并返回可能的分裂新key/son&lt;/div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; private InsertRes insertAndSplit(long nodeUid, long uid, long key)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="Qv1PfZhyIITmkcm3oRY1-1">
+          <mxGeometry x="20" y="100" width="830" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="YAdKv51aWQ2oBR8mYH2P-1" value="TM（TableManagerImpl）" style="swimlane;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;verticalAlign=middle;fontFamily=Verdana;" vertex="1" parent="1">
+          <mxGeometry x="-905" y="405" width="820" height="510" as="geometry" />
+        </mxCell>
+        <mxCell id="YAdKv51aWQ2oBR8mYH2P-2" value="接口方法：&lt;br&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; BeginRes &lt;font color=&quot;#cc0066&quot;&gt;begin(Begin begin)&lt;/font&gt;;&amp;nbsp; &amp;nbsp;// 开启事务，调用vm，返回事务id&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; byte[] &lt;font color=&quot;#cc0066&quot;&gt;commit(long xid);&lt;/font&gt;&amp;nbsp; // 提交事务，调用vm&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; byte[] &lt;font color=&quot;#cc0066&quot;&gt;abort(long xid)&lt;/font&gt;;&amp;nbsp; // 撤销事务，调用vm&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; byte[] show(long xid);&amp;nbsp; // 显示所有的表&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; 以下方法都调用了Table的相应方法：&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; byte[] &lt;font color=&quot;#cc0066&quot;&gt;create(long xid, Create create)&lt;/font&gt;;&amp;nbsp; // 新建一个表&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; byte[] &lt;font color=&quot;#cc0066&quot;&gt;insert(long xid, Insert insert)&lt;/font&gt;;&amp;nbsp; // 执行插入语句&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; byte[] &lt;font color=&quot;#cc0066&quot;&gt;read(long xid, Select select)&lt;/font&gt;;&amp;nbsp; &amp;nbsp;// 执行select语句&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; byte[] &lt;font color=&quot;#cc0066&quot;&gt;update(long xid, Update update)&lt;/font&gt;;&amp;nbsp; // 执行update语句&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; byte[] &lt;font color=&quot;#cc0066&quot;&gt;delete(long xid, Delete delete)&lt;/font&gt;;&amp;nbsp; // 执行delete语句&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#000000;fontFamily=Verdana;" vertex="1" parent="YAdKv51aWQ2oBR8mYH2P-1">
+          <mxGeometry x="10" y="30" width="550" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="YAdKv51aWQ2oBR8mYH2P-3" value="私有方法：&lt;br&gt;&amp;nbsp; &amp;nbsp; private void loadTables()&amp;nbsp; &amp;nbsp;// 载入所有的表&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;private long firstTableUid()&amp;nbsp; &amp;nbsp;// 返回第一个表的uid&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;private void updateFirstTableUid(long uid)&amp;nbsp; &amp;nbsp;&amp;nbsp;// 更新第一个表的uid，因为是头插法。" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="YAdKv51aWQ2oBR8mYH2P-1">
+          <mxGeometry x="10" y="290" width="680" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YAdKv51aWQ2oBR8mYH2P-4" value="静态方法：&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span&gt;// 新建bt文件，创建TableManager，依赖vm和dm以及启动类Booter。&lt;/span&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; public static TableManager create(String path, VersionManager vm, DataManager dm)&lt;/div&gt;&lt;div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; // 从已有bt文件创建TableManager&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; public static TableManager open(String path, VersionManager vm, DataManager dm)&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontFamily=Verdana;fontColor=#000000;" vertex="1" parent="YAdKv51aWQ2oBR8mYH2P-1">
+          <mxGeometry x="10" y="390" width="730" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="YAdKv51aWQ2oBR8mYH2P-5" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=16;fontColor=#CC0066;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="YAdKv51aWQ2oBR8mYH2P-12" target="_PRSQd1lVtF83WSqiRkg-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-450" y="960" as="sourcePoint" />
+            <mxPoint x="-400" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YAdKv51aWQ2oBR8mYH2P-8" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=16;fontColor=#CC0066;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="YAdKv51aWQ2oBR8mYH2P-14" target="Qv1PfZhyIITmkcm3oRY1-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="780" as="sourcePoint" />
+            <mxPoint x="240" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YAdKv51aWQ2oBR8mYH2P-9" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;fontSize=16;fontColor=#CC0066;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="YAdKv51aWQ2oBR8mYH2P-10" target="maq0z_wxzJ45hIfA5iVd-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="1060" as="sourcePoint" />
+            <mxPoint x="710" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YAdKv51aWQ2oBR8mYH2P-10" value="读写Node数据/bootUid等" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#CC0066;" vertex="1" parent="1">
+          <mxGeometry x="590" y="1020" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YAdKv51aWQ2oBR8mYH2P-11" value="" style="shape=flexArrow;endArrow=none;html=1;rounded=0;fontSize=16;fontColor=#CC0066;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Qv1PfZhyIITmkcm3oRY1-1" target="YAdKv51aWQ2oBR8mYH2P-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="685" y="860" as="sourcePoint" />
+            <mxPoint x="685" y="1610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YAdKv51aWQ2oBR8mYH2P-12" value="查看/更新数据项/事务状态" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#CC0066;" vertex="1" parent="1">
+          <mxGeometry x="-595" y="950" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YAdKv51aWQ2oBR8mYH2P-13" value="" style="shape=flexArrow;endArrow=none;html=1;rounded=0;fontSize=16;fontColor=#CC0066;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="YAdKv51aWQ2oBR8mYH2P-1" target="YAdKv51aWQ2oBR8mYH2P-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-495" y="915" as="sourcePoint" />
+            <mxPoint x="-495" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YAdKv51aWQ2oBR8mYH2P-14" value="查看/更新索引Node项" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#CC0066;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="650" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="YAdKv51aWQ2oBR8mYH2P-15" value="" style="shape=flexArrow;endArrow=none;html=1;rounded=0;fontSize=16;fontColor=#CC0066;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YAdKv51aWQ2oBR8mYH2P-1" target="YAdKv51aWQ2oBR8mYH2P-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-85" y="660" as="sourcePoint" />
+            <mxPoint x="165" y="660" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
